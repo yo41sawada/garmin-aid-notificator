@@ -1,0 +1,17 @@
+# ビルド成果物
+bin/
+output/
+*.prg
+*.iq
+
+# 開発者キー（絶対にコミットしない）
+*.der
+*.pem
+*.key
+
+# macOS
+.DS_Store
+
+# エディタ
+.vscode/
+.idea/
