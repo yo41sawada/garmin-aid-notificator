@@ -42,6 +42,12 @@ monkey.jungle               # ビルド設定
 - Connect IQ SDK 9.1.0
 - Monkey C
 
+## Claude Code を使った開発
+
+このプロジェクトは Claude Code での開発を想定しており、`.claude/settings.json` にプロジェクト共通の権限設定が含まれています。
+
+個人環境に依存する設定は `.claude/settings.local.json`（git 管理外）に記述します。
+
 ## セットアップ
 
 **1. SDK のパスを通す**

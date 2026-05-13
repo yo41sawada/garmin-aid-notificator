@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(monkeyc *)",
+      "Bash(monkeydo *)",
+      "Bash(connectiq *)"
+    ]
+  }
+}
