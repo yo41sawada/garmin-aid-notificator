@@ -36,5 +36,5 @@ export PATH="$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks/$(ls ~/Libr
 ## ビルド
 
 ```bash
-monkeyc -f monkey.jungle -o output/aid-notificator.prg -y developer_key
+monkeyc -f monkey.jungle -o output/aid-notificator.prg -y credentials/developer_key.der
 ```

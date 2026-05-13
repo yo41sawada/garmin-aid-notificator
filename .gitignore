@@ -5,9 +5,7 @@ output/
 *.iq
 
 # 開発者キー（絶対にコミットしない）
-*.der
-*.pem
-*.key
+credentials/
 
 # macOS
 .DS_Store
