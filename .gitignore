@@ -11,9 +11,6 @@ credentials/
 .DS_Store
 **/.DS_Store
 
-# インストーラー
-setup/
-
 # エディタ
 .vscode/
 .idea/
