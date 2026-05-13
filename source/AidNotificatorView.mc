@@ -1,27 +1,8 @@
-import Toybox.Application;
 import Toybox.Activity;
 import Toybox.Graphics;
-import Toybox.Lang;
 import Toybox.WatchUi;
 
-class AidNotificatorApp extends Application.AppBase {
-
-    public function initialize() {
-        AppBase.initialize();
-    }
-
-    public function onStart(state as Dictionary?) as Void {
-    }
-
-    public function onStop(state as Dictionary?) as Void {
-    }
-
-    public function getInitialView() as [WatchUi.Views] or [WatchUi.Views, WatchUi.InputDelegates] {
-        return [new AidNotificatorField()];
-    }
-}
-
-class AidNotificatorField extends WatchUi.DataField {
+class AidNotificatorView extends WatchUi.DataField {
 
     public function initialize() {
         DataField.initialize();

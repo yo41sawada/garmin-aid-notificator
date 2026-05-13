@@ -11,6 +11,10 @@ output/
 
 # macOS
 .DS_Store
+**/.DS_Store
+
+# インストーラー
+setup/
 
 # エディタ
 .vscode/
