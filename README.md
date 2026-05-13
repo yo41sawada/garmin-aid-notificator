@@ -46,19 +46,7 @@ monkey.jungle               # ビルド設定
 
 このプロジェクトは Claude Code での開発を想定しており、`.claude/settings.json` にプロジェクト共通の権限設定が含まれています。
 
-個人環境に依存する設定（例: Homebrew 経由の `gh` コマンドのパス）は `.claude/settings.local.json` に記述します。このファイルは git 管理外です。
-
-```json
-{
-  "permissions": {
-    "allow": [
-      "Bash(/opt/homebrew/bin/gh *)"
-    ]
-  }
-}
-```
-
-`gh` のパスが異なる場合は適宜書き換えてください（`which gh` で確認できます）。
+個人環境に依存する設定は `.claude/settings.local.json`（git 管理外）に記述します。
 
 ## セットアップ
 
