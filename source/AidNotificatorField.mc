@@ -1,31 +1,41 @@
-import Toybox.WatchUi;
-import Toybox.Graphics;
+import Toybox.Application;
 import Toybox.Activity;
+import Toybox.Graphics;
 import Toybox.Lang;
+import Toybox.WatchUi;
+
+class AidNotificatorApp extends Application.AppBase {
+
+    public function initialize() {
+        AppBase.initialize();
+    }
+
+    public function onStart(state as Dictionary?) as Void {
+    }
+
+    public function onStop(state as Dictionary?) as Void {
+    }
+
+    public function getInitialView() as [WatchUi.Views] or [WatchUi.Views, WatchUi.InputDelegates] {
+        return [new AidNotificatorField()];
+    }
+}
 
 class AidNotificatorField extends WatchUi.DataField {
 
-    function initialize() {
+    public function initialize() {
         DataField.initialize();
     }
 
-    function onLayout(dc as Graphics.Dc) as Void {
+    public function compute(info as Activity.Info) as Void {
     }
 
-    function compute(info as Activity.Info) as Lang.Numeric or Lang.Duration or Lang.String or Null {
-        return null;
-    }
-
-    function onUpdate(dc as Graphics.Dc) as Void {
-        var width = dc.getWidth();
-        var height = dc.getHeight();
-
+    public function onUpdate(dc as Graphics.Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
-
         dc.drawText(
-            width / 2,
-            height / 2,
+            dc.getWidth() / 2,
+            dc.getHeight() / 2,
             Graphics.FONT_MEDIUM,
             "Hello World",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
