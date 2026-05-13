@@ -1,7 +1,6 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git *)",
       "Bash(monkeyc *)",
       "Bash(monkeydo *)",
       "Bash(connectiq *)"
