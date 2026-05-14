@@ -14,14 +14,16 @@ class AidNotificatorView extends WatchUi.DataField {
     }
 
     public function compute(info as Activity.Info) as Void {
-        if (info.elapsedDistance != null) {
-            var distanceKm = (info.elapsedDistance as Float) / 1000.0;
-            var nextAidKm = Math.ceil(distanceKm / INTERVAL_KM) * INTERVAL_KM;
-            if (nextAidKm < INTERVAL_KM) {
-                nextAidKm = INTERVAL_KM;
-            }
-            _remainingKm = nextAidKm - distanceKm;
+        if (info.elapsedDistance == null) {
+            return;
         }
+
+        var distanceKm = (info.elapsedDistance as Float) / 1000.0;
+        var nextAidKm = Math.ceil(distanceKm / INTERVAL_KM) * INTERVAL_KM;
+        if (nextAidKm < INTERVAL_KM) {
+            nextAidKm = INTERVAL_KM;
+        }
+        _remainingKm = nextAidKm - distanceKm;
     }
 
     public function onUpdate(dc as Graphics.Dc) as Void {
