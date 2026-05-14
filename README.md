@@ -86,3 +86,7 @@ monkeydo output/aid-notificator.prg fr165
 ```
 
 シミュレーター上でデータフィールドが表示されます。表示レイアウトは **Data Fields → Layout** から変更できます。
+
+**3. アクティビティデータをシミュレートする**
+
+距離などのアクティビティデータを動かすには、**Simulation → Activity Data** を開き、**Start** ボタンをクリックします。Data Source が **Data Simulation** になっていることを確認してください。
