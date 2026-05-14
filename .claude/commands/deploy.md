@@ -1,9 +1,6 @@
 アプリをビルドしてシミュレーターに転送する。
 
-1. `which monkeyc` で Connect IQ SDK が PATH に通っているか確認する。見つからない場合は以下のコマンドをユーザーに案内して中断する:
-   ```
-   export PATH="$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks/$(ls ~/Library/Application\ Support/Garmin/ConnectIQ/Sdks/ | sort -V | tail -1)/bin:$PATH"
-   ```
+1. `which monkeyc` で Connect IQ SDK が PATH に通っているか確認する。見つからない場合はユーザーに案内して中断する。
 
 2. `mkdir -p output` で出力ディレクトリを作成する。
 

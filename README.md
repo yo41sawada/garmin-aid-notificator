@@ -50,11 +50,13 @@ monkey.jungle               # ビルド設定
 
 ## セットアップ
 
-**1. SDK のパスを通す**
+**1. SDK の bin ディレクトリを PATH に追加する**
 
-```bash
-export PATH="$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks/$(ls ~/Library/Application\ Support/Garmin/ConnectIQ/Sdks/ | sort -V | tail -1)/bin:$PATH"
 ```
+$HOME/Library/Application Support/Garmin/ConnectIQ/Sdks/<sdk-version>/bin
+```
+
+`<sdk-version>` は SDK Manager でインストールしたバージョン名（例: `connectiq-sdk-mac-9.1.0-2026-03-09-6a872a80b`）。
 
 **2. 開発者キーを生成する**
 
