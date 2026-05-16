@@ -2,6 +2,7 @@ import Toybox.Activity;
 import Toybox.Attention;
 import Toybox.Graphics;
 import Toybox.Lang;
+import Toybox.System;
 import Toybox.WatchUi;
 
 class AidNotificatorView extends WatchUi.DataField {
@@ -33,10 +34,11 @@ class AidNotificatorView extends WatchUi.DataField {
     }
 
     private function _notify() as Void {
-        if (Attention has :playTone) {
+        var settings = System.getDeviceSettings();
+        if ((Attention has :playTone) && settings.tonesOn) {
             Attention.playTone(Attention.TONE_DISTANCE_ALERT);
         }
-        if (Attention has :vibrate) {
+        if ((Attention has :vibrate) && settings.vibrateOn) {
             var vibeData = [new Attention.VibeProfile(100, 1000)] as Array<Attention.VibeProfile>;
             Attention.vibrate(vibeData);
         }
