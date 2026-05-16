@@ -34,12 +34,13 @@ class AidNotificatorView extends WatchUi.DataField {
 
     private function _notify() as Void {
         if (Attention has :playTone) {
-            Attention.playTone(Attention.TONE_ALERT_HI);
+            Attention.playTone(Attention.TONE_DISTANCE_ALERT);
         }
         if (Attention has :vibrate) {
             var vibeData = [new Attention.VibeProfile(100, 1000)] as Array<Attention.VibeProfile>;
             Attention.vibrate(vibeData);
         }
+        showAlert(new AidAlertView());
     }
 
     public function onUpdate(dc as Graphics.Dc) as Void {
