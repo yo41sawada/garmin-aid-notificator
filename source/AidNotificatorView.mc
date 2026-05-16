@@ -43,6 +43,7 @@ class AidNotificatorView extends WatchUi.DataField {
             Attention.vibrate(vibeData);
         }
         showAlert(new AidAlertView());
+        WatchUi.requestUpdate();
     }
 
     public function onUpdate(dc as Graphics.Dc) as Void {
