@@ -52,7 +52,7 @@ class AidNotificatorView extends WatchUi.DataField {
             dc.getWidth() / 2,
             dc.getHeight() / 2,
             Graphics.FONT_LARGE,
-            _remainingKm.format("%.1f") + "km",
+            _remainingKm.format("%.2f") + "km",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
         );
     }
