@@ -11,6 +11,7 @@ class AidNotificatorView extends WatchUi.DataField {
 
     private var _remainingKm as Float = INTERVAL_KM;
     private var _lastNotifiedAidKm as Float = 0.0;
+    private var _isActive as Boolean = false;
 
     public function initialize() {
         DataField.initialize();
@@ -21,6 +22,7 @@ class AidNotificatorView extends WatchUi.DataField {
             return;
         }
 
+        _isActive = true;
         var distanceKm = (info.elapsedDistance as Float) / 1000.0;
 
         var nextNotifyKm = _lastNotifiedAidKm + INTERVAL_KM;
@@ -48,11 +50,12 @@ class AidNotificatorView extends WatchUi.DataField {
     public function onUpdate(dc as Graphics.Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.clear();
+        var text = _isActive ? _remainingKm.format("%.2f") + "km" : "AID Ready";
         dc.drawText(
             dc.getWidth() / 2,
             dc.getHeight() / 2,
             Graphics.FONT_LARGE,
-            _remainingKm.format("%.2f") + "km",
+            text,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
         );
     }
