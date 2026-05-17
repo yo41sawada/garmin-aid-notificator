@@ -24,6 +24,8 @@ jobs:
             echo "$TRACKED_CREDS"
             FAILED=1
           fi
+          echo "--- all tracked files with sensitive extensions ---"
+          git ls-files | grep -E '\.(pem|der|key|p12|pfx|keystore)$' || echo "(none)"
           TRACKED_KEYS=$(git ls-files | grep -E '\.(pem|der|key|p12|pfx|keystore)$')
           if [ -n "$TRACKED_KEYS" ]; then
             echo "Secrets check failed: files with sensitive extensions are tracked by git."
