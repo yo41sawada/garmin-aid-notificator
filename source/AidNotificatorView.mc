@@ -53,7 +53,11 @@ class AidNotificatorView extends WatchUi.DataField {
             var vibeData = [new Attention.VibeProfile(100, 1000)] as Array<Attention.VibeProfile>;
             Attention.vibrate(vibeData);
         }
-        showAlert(new AidAlertView());
+        try {
+            showAlert(new AidAlertView());
+        } catch (ex instanceof Lang.Exception) {
+            // DataFieldAlert が利用できない状況では無視する
+        }
     }
 
     public function onUpdate(dc as Graphics.Dc) as Void {
