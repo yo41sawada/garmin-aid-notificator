@@ -86,6 +86,34 @@ mkdir -p output
 monkeyc -f monkey.jungle -o output/aid-notificator.prg -d fr165 -y credentials/developer_key.der
 ```
 
+## シミュレーターでのテスト
+
+**1. シミュレーターを起動する**
+
+```bash
+connectiq &
+```
+
+**2. アプリをシミュレーターに転送する**
+
+```bash
+monkeydo output/aid-notificator.prg fr165
+```
+
+シミュレーター上でデータフィールドが表示されます。表示レイアウトは **Data Fields → Layout** から変更できます。
+
+**3. アクティビティデータをシミュレートする**
+
+距離などのアクティビティデータを動かすには、**Simulation → Activity Data** を開き、**Start** ボタンをクリックします。Data Source が **Data Simulation** になっていることを確認してください。
+
+**4. 全画面アラートを有効にする**
+
+シミュレーターのデフォルトでは DataFieldAlert が無効になっています。**Settings → Data Fields → Enable Alert** にチェックを入れてください。
+
+**5. トーン・バイブレーションをテストする**
+
+**Settings → Tones / Vibrate** のチェック状態を切り替えることで、デバイス設定のオン/オフをシミュレートできます。
+
 ## 実機へのインストール
 
 macOS では Finder が MTP デバイスを認識しないため、[OpenMTP](https://openmtp.ganeshrvel.com/) を使用する。
@@ -115,31 +143,3 @@ monkeyc -f monkey.jungle -o output/aid-notificator.prg -d fr165 -y credentials/d
 **5. デバイスを切断してアプリを追加する**
 
 ケーブルを抜いた後、FR165 でランニングアクティビティのデータフィールドスロットに「Aid Notificator」を追加する。
-
-## シミュレーターでのテスト
-
-**1. シミュレーターを起動する**
-
-```bash
-connectiq &
-```
-
-**2. アプリをシミュレーターに転送する**
-
-```bash
-monkeydo output/aid-notificator.prg fr165
-```
-
-シミュレーター上でデータフィールドが表示されます。表示レイアウトは **Data Fields → Layout** から変更できます。
-
-**3. アクティビティデータをシミュレートする**
-
-距離などのアクティビティデータを動かすには、**Simulation → Activity Data** を開き、**Start** ボタンをクリックします。Data Source が **Data Simulation** になっていることを確認してください。
-
-**4. 全画面アラートを有効にする**
-
-シミュレーターのデフォルトでは DataFieldAlert が無効になっています。**Settings → Data Fields → Enable Alert** にチェックを入れてください。
-
-**5. トーン・バイブレーションをテストする**
-
-**Settings → Tones / Vibrate** のチェック状態を切り替えることで、デバイス設定のオン/オフをシミュレートできます。
