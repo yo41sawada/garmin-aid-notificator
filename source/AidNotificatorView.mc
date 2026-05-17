@@ -8,8 +8,6 @@ import Toybox.WatchUi;
 class AidNotificatorView extends WatchUi.DataField {
 
     // 通知する距離リスト（km）
-    // 補給ポイントの手前で通知したい場合は、その距離を登録する
-    // 例: 補給ポイントが 5.0km の場合、300m手前なら 4.7 を登録
     private const AID_STATIONS as Array<Float> = [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0] as Array<Float>;
 
     private var _nextAidIndex as Number = 0;
