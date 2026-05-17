@@ -1,9 +1,22 @@
 #!/bin/sh
-# コミット対象に credentials/ 配下のファイルが含まれていないかチェックする
+# コミット対象に機密ファイルが含まれていないかチェックする
 
-STAGED=$(git diff --cached --name-only | grep '^credentials/')
-if [ -n "$STAGED" ]; then
+FAILED=0
+
+# credentials/ 配下のファイル
+STAGED_CREDS=$(git diff --cached --name-only | grep '^credentials/')
+if [ -n "$STAGED_CREDS" ]; then
   echo "Error: credential files must not be committed."
-  echo "$STAGED"
-  exit 1
+  echo "$STAGED_CREDS"
+  FAILED=1
 fi
+
+# 機密性の高い拡張子（場所を問わず）
+STAGED_KEYS=$(git diff --cached --name-only | grep -E '\.(pem|der|key|p12|pfx|keystore)$')
+if [ -n "$STAGED_KEYS" ]; then
+  echo "Error: files with sensitive extensions must not be committed."
+  echo "$STAGED_KEYS"
+  FAILED=1
+fi
+
+exit $FAILED
