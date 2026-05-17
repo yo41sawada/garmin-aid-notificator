@@ -41,24 +41,16 @@ manifest.xml                # アプリ設定（種別・対応デバイス）
 monkey.jungle               # ビルド設定
 ```
 
-## 前提条件
-
-- **Java（Temurin）** — Connect IQ SDK の実行に必要
-  - [Adoptium](https://adoptium.net/) から macOS 向け JDK をインストール
-- **Connect IQ SDK Manager** — SDK とデバイス定義のインストールに使用
-  - [Garmin Developer](https://developer.garmin.com/connect-iq/sdk/) からインストール
-  - SDK Manager を起動し、SDK 最新版と `Forerunner 165` デバイスをインストール
-
 ## 開発環境
 
-- Connect IQ SDK 9.1.0
-- Monkey C
+| ツール | バージョン | 用途 |
+|--------|-----------|------|
+| [Java（Temurin）](https://adoptium.net/) | 26.0.1 | Connect IQ SDK の実行 |
+| [Connect IQ SDK](https://developer.garmin.com/connect-iq/sdk/) | 9.1.0 | ビルド・シミュレーター |
+| [OpenMTP](https://openmtp.ganeshrvel.com/) | 3.2.25 | macOS での実機転送（MTP） |
+| [Claude Code](https://claude.ai/code) | 最新版 | AI 支援開発 |
 
-## Claude Code を使った開発
-
-このプロジェクトは Claude Code での開発を想定しており、`.claude/settings.json` にプロジェクト共通の権限設定が含まれています。
-
-個人環境に依存する設定は `.claude/settings.local.json`（git 管理外）に記述します。
+Connect IQ SDK は SDK Manager からインストールする。SDK Manager 起動後、SDK 9.1.0 と `Forerunner 165` デバイスをインストールする。
 
 ## セットアップ
 
@@ -77,6 +69,10 @@ mkdir -p credentials
 openssl genrsa -out credentials/developer_key.pem 4096
 openssl pkcs8 -topk8 -inform PEM -outform DER -in credentials/developer_key.pem -out credentials/developer_key.der -nocrypt
 ```
+
+**3. Claude Code の設定をする**
+
+このプロジェクトは Claude Code での開発を想定しており、`.claude/settings.json` にプロジェクト共通の権限設定が含まれています。個人環境に依存する設定は `.claude/settings.local.json`（git 管理外）に記述します。
 
 ## ビルド
 
