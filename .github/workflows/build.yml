@@ -18,21 +18,8 @@ jobs:
           distribution: temurin
           java-version: '26'
 
-      - name: Cache Connect IQ SDK
-        id: cache-sdk
-        uses: actions/cache@v4
-        with:
-          path: ~/ciq-sdk
-          key: ciq-sdk-9.1.0-2026-03-09-6a872a80b
-
-      - name: Download Connect IQ SDK
-        if: steps.cache-sdk.outputs.cache-hit != 'true'
-        run: |
-          wget -q "https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-linux-9.1.0-2026-03-09-6a872a80b.zip" -O ciq-sdk.zip
-          unzip -q ciq-sdk.zip -d ~/ciq-sdk
-
       - name: Add SDK to PATH
-        run: echo "$HOME/ciq-sdk/bin" >> $GITHUB_PATH
+        run: echo "$GITHUB_WORKSPACE/ci/sdk/bin" >> $GITHUB_PATH
 
       - name: Set up device definitions
         run: |
