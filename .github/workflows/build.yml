@@ -50,3 +50,7 @@ jobs:
             echo "Lint failed: warnings found."
             exit 1
           fi
+
+      - name: Static Analysis
+        run: |
+          monkeyc -f monkey.jungle -o /tmp/analysis.prg -d fr165 -y credentials/developer_key.der -l 3
