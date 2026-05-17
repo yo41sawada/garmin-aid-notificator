@@ -68,19 +68,25 @@ class AidNotificatorView extends WatchUi.DataField {
 
         var cx = dc.getWidth() / 2;
         var cy = dc.getHeight() / 2;
+        var text = null;
 
         if (!_isActive) {
-            dc.drawText(cx, cy, Graphics.FONT_LARGE, "AID Ready", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            text = "AID Ready";
         } else if (_nextAidIndex >= AID_STATIONS.size()) {
-            dc.drawText(cx, cy, Graphics.FONT_LARGE, "Keep going!", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        } else {
-            var labelHeight = dc.getFontHeight(Graphics.FONT_TINY);
-            var numberHeight = dc.getFontHeight(Graphics.FONT_NUMBER_HOT);
-            var gap = 4;
-            var totalHeight = labelHeight + gap + numberHeight;
-            var startY = (dc.getHeight() - totalHeight) / 2;
-            dc.drawText(cx, startY + labelHeight / 2, Graphics.FONT_TINY, "NEXT is", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            dc.drawText(cx, startY + labelHeight + gap + numberHeight / 2, Graphics.FONT_NUMBER_HOT, _remainingKm.format("%.2f"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            text = "Keep going!";
         }
+
+        if (text != null) {
+            dc.drawText(cx, cy, Graphics.FONT_LARGE, text, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            return;
+        }
+
+        var labelHeight = dc.getFontHeight(Graphics.FONT_TINY);
+        var numberHeight = dc.getFontHeight(Graphics.FONT_NUMBER_HOT);
+        var gap = 4;
+        var totalHeight = labelHeight + gap + numberHeight;
+        var startY = (dc.getHeight() - totalHeight) / 2;
+        dc.drawText(cx, startY + labelHeight / 2, Graphics.FONT_TINY, "NEXT is", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(cx, startY + labelHeight + gap + numberHeight / 2, Graphics.FONT_NUMBER_HOT, _remainingKm.format("%.2f"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 }
