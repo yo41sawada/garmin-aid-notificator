@@ -48,7 +48,9 @@ class AidNotificatorView extends WatchUi.DataField {
     }
 
     public function onUpdate(dc as Graphics.Dc) as Void {
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
+        var backgroundColor = getBackgroundColor();
+        var textColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
+        dc.setColor(textColor, backgroundColor);
         dc.clear();
         var text = _isActive ? _remainingKm.format("%.2f") + "km" : "AID Ready";
         dc.drawText(
