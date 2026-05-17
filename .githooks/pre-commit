@@ -1,0 +1,9 @@
+#!/bin/sh
+# コミット対象に credentials/ 配下のファイルが含まれていないかチェックする
+
+STAGED=$(git diff --cached --name-only | grep '^credentials/')
+if [ -n "$STAGED" ]; then
+  echo "Error: credential files must not be committed."
+  echo "$STAGED"
+  exit 1
+fi

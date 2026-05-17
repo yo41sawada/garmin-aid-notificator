@@ -70,7 +70,15 @@ openssl genrsa -out credentials/developer_key.pem 4096
 openssl pkcs8 -topk8 -inform PEM -outform DER -in credentials/developer_key.pem -out credentials/developer_key.der -nocrypt
 ```
 
-**3. Claude Code の設定をする**
+**3. git フックを有効にする**
+
+```bash
+git config core.hooksPath .githooks
+```
+
+`credentials/` 配下のファイルを誤ってコミットしないための pre-commit フックが有効になります。
+
+**4. Claude Code の設定をする**
 
 このプロジェクトは Claude Code での開発を想定しており、`.claude/settings.json` にプロジェクト共通の権限設定が含まれています。個人環境に依存する設定は `.claude/settings.local.json`（git 管理外）に記述します。
 
