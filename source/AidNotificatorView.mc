@@ -66,27 +66,28 @@ class AidNotificatorView extends WatchUi.DataField {
         dc.setColor(textColor, backgroundColor);
         dc.clear();
 
-        var cx = dc.getWidth() / 2;
-        var cy = dc.getHeight() / 2;
-        var text = null;
-
+        var text;
         if (!_isActive) {
             text = "AID Ready";
         } else if (_nextAidIndex >= AID_STATIONS.size()) {
             text = "Keep going!";
-        }
-
-        if (text != null) {
-            dc.drawText(cx, cy, Graphics.FONT_LARGE, text, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        } else {
+            var cx = dc.getWidth() / 2;
+            var labelHeight = dc.getFontHeight(Graphics.FONT_TINY);
+            var numberHeight = dc.getFontHeight(Graphics.FONT_NUMBER_HOT);
+            var gap = 4;
+            var totalHeight = labelHeight + gap + numberHeight;
+            var startY = (dc.getHeight() - totalHeight) / 2;
+            dc.drawText(cx, startY + labelHeight / 2, Graphics.FONT_TINY, "NEXT is", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(cx, startY + labelHeight + gap + numberHeight / 2, Graphics.FONT_NUMBER_HOT, _remainingKm.format("%.2f"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
             return;
         }
-
-        var labelHeight = dc.getFontHeight(Graphics.FONT_TINY);
-        var numberHeight = dc.getFontHeight(Graphics.FONT_NUMBER_HOT);
-        var gap = 4;
-        var totalHeight = labelHeight + gap + numberHeight;
-        var startY = (dc.getHeight() - totalHeight) / 2;
-        dc.drawText(cx, startY + labelHeight / 2, Graphics.FONT_TINY, "NEXT is", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        dc.drawText(cx, startY + labelHeight + gap + numberHeight / 2, Graphics.FONT_NUMBER_HOT, _remainingKm.format("%.2f"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(
+            dc.getWidth() / 2,
+            dc.getHeight() / 2,
+            Graphics.FONT_LARGE,
+            text,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
     }
 }
