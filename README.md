@@ -111,8 +111,6 @@ monkeydo output/aid-notificator.prg fr165
 
 ## 実機へのインストール
 
-macOS では Finder が MTP デバイスを認識しないため、[OpenMTP](https://openmtp.ganeshrvel.com/) を使用する。
-
 **1. デバイスを USB 接続し、MTP モードに切り替える**
 
 FR165 で **設定 → システム → USB モード → Garmin（MTP）** を選択する。
