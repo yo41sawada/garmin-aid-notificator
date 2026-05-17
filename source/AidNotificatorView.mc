@@ -7,14 +7,16 @@ import Toybox.WatchUi;
 
 class AidNotificatorView extends WatchUi.DataField {
 
-    private const INTERVAL_KM as Float = 5.0;
+    // 通知する距離リスト（km）
+    private const AID_STATIONS as Array<Float> = [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0] as Array<Float>;
 
-    private var _remainingKm as Float = INTERVAL_KM;
-    private var _lastNotifiedAidKm as Float = 0.0;
+    private var _nextAidIndex as Number = 0;
+    private var _remainingKm as Float = 0.0;
     private var _isActive as Boolean = false;
 
     public function initialize() {
         DataField.initialize();
+        _remainingKm = AID_STATIONS[0];
     }
 
     public function compute(info as Activity.Info) as Void {
@@ -25,14 +27,21 @@ class AidNotificatorView extends WatchUi.DataField {
         _isActive = true;
         var distanceKm = (info.elapsedDistance as Float) / 1000.0;
 
-        var nextNotifyKm = _lastNotifiedAidKm + INTERVAL_KM;
-        if (distanceKm >= nextNotifyKm) {
-            _notify();
-            _lastNotifiedAidKm = nextNotifyKm;
+        if (_nextAidIndex >= AID_STATIONS.size()) {
+            _remainingKm = 0.0;
+            return;
         }
 
-        var nextAidKm = _lastNotifiedAidKm + INTERVAL_KM;
-        _remainingKm = nextAidKm - distanceKm;
+        if (distanceKm >= AID_STATIONS[_nextAidIndex]) {
+            _notify();
+            _nextAidIndex++;
+        }
+
+        if (_nextAidIndex < AID_STATIONS.size()) {
+            _remainingKm = AID_STATIONS[_nextAidIndex] - distanceKm;
+        } else {
+            _remainingKm = 0.0;
+        }
     }
 
     private function _notify() as Void {
