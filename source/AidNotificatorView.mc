@@ -65,20 +65,17 @@ class AidNotificatorView extends WatchUi.DataField {
         var textColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
         dc.setColor(textColor, backgroundColor);
         dc.clear();
-        var text;
+
+        var cx = dc.getWidth() / 2;
+        var cy = dc.getHeight() / 2;
+
         if (!_isActive) {
-            text = "AID Ready";
+            dc.drawText(cx, cy, Graphics.FONT_SMALL, "AID Ready", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         } else if (_nextAidIndex >= AID_STATIONS.size()) {
-            text = "Keep going!";
+            dc.drawText(cx, cy, Graphics.FONT_SMALL, "Keep going!", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         } else {
-            text = _remainingKm.format("%.2f") + "km";
+            dc.drawText(cx, dc.getHeight() / 3, Graphics.FONT_TINY, "NEXT AID", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(cx, dc.getHeight() * 2 / 3, Graphics.FONT_NUMBER_HOT, _remainingKm.format("%.2f"), Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
-        dc.drawText(
-            dc.getWidth() / 2,
-            dc.getHeight() / 2,
-            Graphics.FONT_LARGE,
-            text,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
-        );
     }
 }
