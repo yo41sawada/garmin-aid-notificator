@@ -15,6 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4.2.2
 
+      - name: Secrets Check
+        run: |
+          TRACKED=$(git ls-files credentials/)
+          if [ -n "$TRACKED" ]; then
+            echo "Secrets check failed: credential files are tracked by git."
+            echo "$TRACKED"
+            exit 1
+          fi
+
       - name: Set up Java (Temurin)
         uses: actions/setup-java@v4.7.0
         with:
