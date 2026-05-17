@@ -103,7 +103,7 @@ connectiq &
 monkeydo output/aid-notificator.prg fr165
 ```
 
-シミュレーター上でデータフィールドが表示されます。表示レイアウトは **Data Fields → Layout** から変更できます。
+シミュレーター上でデータフィールドが表示されます。表示レイアウトは **Data Fields → Layout** から変更できます。このアプリは **1 Field** を推奨します。
 
 **3. アクティビティデータをシミュレートする**
 
