@@ -41,3 +41,12 @@ jobs:
         run: |
           mkdir -p output
           monkeyc -f monkey.jungle -o output/aid-notificator.prg -d fr165 -y credentials/developer_key.der
+
+      - name: Lint
+        run: |
+          OUTPUT=$(monkeyc -f monkey.jungle -o /dev/null -d fr165 -y credentials/developer_key.der -w 2>&1)
+          echo "$OUTPUT"
+          if echo "$OUTPUT" | grep -q "^WARNING:"; then
+            echo "Lint failed: warnings found."
+            exit 1
+          fi

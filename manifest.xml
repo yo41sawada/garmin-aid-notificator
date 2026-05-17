@@ -13,6 +13,8 @@
         <iq:permissions>
             <iq:uses-permission id="DataFieldAlert"/>
         </iq:permissions>
-        <iq:languages/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
     </iq:application>
 </iq:manifest>
