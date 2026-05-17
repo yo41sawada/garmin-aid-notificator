@@ -1,0 +1,53 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '26'
+
+      - name: Cache Connect IQ SDK
+        id: cache-sdk
+        uses: actions/cache@v4
+        with:
+          path: ~/ciq-sdk
+          key: ciq-sdk-9.1.0-2026-03-09-6a872a80b
+
+      - name: Download Connect IQ SDK
+        if: steps.cache-sdk.outputs.cache-hit != 'true'
+        run: |
+          wget -q "https://developer.garmin.com/downloads/connect-iq/sdks/connectiq-sdk-linux-9.1.0-2026-03-09-6a872a80b.zip" -O ciq-sdk.zip
+          unzip -q ciq-sdk.zip -d ~/ciq-sdk
+
+      - name: Add SDK to PATH
+        run: echo "$HOME/ciq-sdk/bin" >> $GITHUB_PATH
+
+      - name: Set up device definitions
+        run: |
+          mkdir -p "$HOME/.Garmin/ConnectIQ/Devices"
+          cp -r ci/devices/fr165 "$HOME/.Garmin/ConnectIQ/Devices/"
+
+      - name: Generate developer key
+        run: |
+          mkdir -p credentials
+          openssl genrsa -out credentials/developer_key.pem 4096
+          openssl pkcs8 -topk8 -inform PEM -outform DER \
+            -in credentials/developer_key.pem \
+            -out credentials/developer_key.der -nocrypt
+
+      - name: Build
+        run: |
+          mkdir -p output
+          monkeyc -f monkey.jungle -o output/aid-notificator.prg -d fr165 -y credentials/developer_key.der
