@@ -19,7 +19,7 @@ jobs:
           java-version: '26'
 
       - name: Add SDK to PATH
-        run: echo "$GITHUB_WORKSPACE/ci/sdk/bin" >> $GITHUB_PATH
+        run: echo "$GITHUB_WORKSPACE/ci/sdk" >> $GITHUB_PATH
 
       - name: Set up device definitions
         run: |
