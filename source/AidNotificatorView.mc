@@ -8,7 +8,7 @@ import Toybox.WatchUi;
 class AidNotificatorView extends WatchUi.DataField {
 
     // 通知する距離リスト（km）
-    private const AID_STATIONS as Array<Float> = [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0] as Array<Float>;
+    private const AID_STATIONS as Array<Float> = [2.0, 4.0, 6.0] as Array<Float>; // temporary for real device testing
 
     private var _nextAidIndex as Number = 0;
     private var _remainingKm as Float = 0.0;
