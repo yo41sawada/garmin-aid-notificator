@@ -60,11 +60,35 @@ class AidNotificatorView extends WatchUi.DataField {
         }
     }
 
+    private function _drawProgressArc(dc as Graphics.Dc, textColor as Number) as Void {
+        var n = AID_STATIONS.size();
+        var gap = 4.0;
+        var segArc = (360.0 - n * gap) / n;
+        var cx = dc.getWidth() / 2;
+        var cy = dc.getHeight() / 2;
+        var size = dc.getWidth() < dc.getHeight() ? dc.getWidth() : dc.getHeight();
+        var r = size / 2 - 15;
+        var dimColor = (textColor == Graphics.COLOR_WHITE) ? Graphics.COLOR_DK_GRAY : Graphics.COLOR_LT_GRAY;
+
+        dc.setPenWidth(20);
+        for (var i = 0; i < n; i++) {
+            var startDeg = 90.0 - i * (segArc + gap);
+            if (startDeg < 0.0) { startDeg += 360.0; }
+            var endDeg = startDeg - segArc;
+            if (endDeg < 0.0) { endDeg += 360.0; }
+            dc.setColor(i < _nextAidIndex ? dimColor : textColor, Graphics.COLOR_TRANSPARENT);
+            dc.drawArc(cx, cy, r, Graphics.ARC_CLOCKWISE, startDeg.toNumber(), endDeg.toNumber());
+        }
+        dc.setPenWidth(1);
+    }
+
     public function onUpdate(dc as Graphics.Dc) as Void {
         var backgroundColor = getBackgroundColor();
         var textColor = (backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK;
         dc.setColor(textColor, backgroundColor);
         dc.clear();
+        _drawProgressArc(dc, textColor);
+        dc.setColor(textColor, backgroundColor);
 
         var text;
         if (!_isActive) {
