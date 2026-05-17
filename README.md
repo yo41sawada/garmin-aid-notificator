@@ -30,7 +30,9 @@ source/
 └── AidAlertView.mc         # 補給通知の全画面アラート
 resources/
 ├── drawables/
-│   └── launcher_icon.png
+│   └── launcher_icon.png   # ランチャーアイコン（70x70）
+├── store/
+│   └── store_icon.png      # Connect IQ ストア申請用アイコン（512x512）
 └── resources.xml           # 文字列・画像リソース
 credentials/                # 開発者キー（git 管理外）
 ├── developer_key.pem
