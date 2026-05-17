@@ -111,30 +111,24 @@ monkeydo output/aid-notificator.prg fr165
 
 ## 実機へのインストール
 
-macOS では Finder が MTP デバイスを認識しないため、[OpenMTP](https://openmtp.ganeshrvel.com/) を使用する。
-
-**1. OpenMTP をインストールする**
-
-[openmtp.ganeshrvel.com](https://openmtp.ganeshrvel.com/) からダウンロードしてインストールする。
-
-**2. デバイスを USB 接続し、MTP モードに切り替える**
+**1. デバイスを USB 接続し、MTP モードに切り替える**
 
 FR165 で **設定 → システム → USB モード → Garmin（MTP）** を選択する。
 
-**3. `.prg` ファイルをビルドする**
+**2. `.prg` ファイルをビルドする**
 
 ```bash
 mkdir -p output
 monkeyc -f monkey.jungle -o output/aid-notificator.prg -d fr165 -y credentials/developer_key.der
 ```
 
-**4. OpenMTP でファイルを転送する**
+**3. OpenMTP でファイルを転送する**
 
 1. OpenMTP を起動する
 2. 左パネル（Mac 側）で `output/` ディレクトリを開く
 3. 右パネル（デバイス側）で `GARMIN/Apps/` を開く（表示されない場合はリフレッシュボタンをクリック）
 4. `aid-notificator.prg` を右パネルの `GARMIN/Apps/` にコピーする
 
-**5. デバイスを切断してアプリを追加する**
+**4. デバイスを切断してアプリを追加する**
 
 ケーブルを抜いた後、FR165 でランニングアクティビティのデータフィールドスロットに「Aid Notificator」を追加する。
