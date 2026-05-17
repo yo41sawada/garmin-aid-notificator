@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Set up Java (Temurin)
+        uses: actions/setup-java@v4.7.0
+        with:
+          distribution: temurin
+          java-version: '26'
+
+      - name: Add SDK to PATH
+        run: echo "$GITHUB_WORKSPACE/ci/sdk" >> $GITHUB_PATH
+
+      - name: Set up device definitions
+        run: |
+          mkdir -p "$HOME/.Garmin/ConnectIQ/Devices"
+          cp -r ci/devices/fr165 "$HOME/.Garmin/ConnectIQ/Devices/"
+
+      - name: Generate developer key
+        run: |
+          mkdir -p credentials
+          openssl genrsa -out credentials/developer_key.pem 4096
+          openssl pkcs8 -topk8 -inform PEM -outform DER \
+            -in credentials/developer_key.pem \
+            -out credentials/developer_key.der -nocrypt
+
+      - name: Build
+        run: |
+          mkdir -p output
+          monkeyc -f monkey.jungle -o output/aid-notificator.prg -d fr165 -y credentials/developer_key.der

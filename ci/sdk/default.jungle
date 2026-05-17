@@ -1,0 +1,1719 @@
+# FOR REFERENCE ONLY
+# Default Jungle file
+
+devicesPath = "/Users/yoshihisa.wada/Library/Application Support/Garmin/ConnectIQ/Devices"
+
+# Set the base properties, base represents the root of the Monkey C Project
+base.sourcePath = .\**.mc
+base.resourcePath = resources
+base.personality = resources
+
+# Set the base language-specific string resources
+base.lang.hun = resources-hun
+base.lang.nob = resources-nob
+base.lang.swe = resources-swe
+base.lang.dut = resources-dut
+base.lang.heb = resources-heb
+base.lang.zhs = resources-zhs
+base.lang.est = resources-est
+base.lang.zht = resources-zht
+base.lang.fin = resources-fin
+base.lang.pol = resources-pol
+base.lang.kor = resources-kor
+base.lang.ces = resources-ces
+base.lang.dan = resources-dan
+base.lang.ron = resources-ron
+base.lang.tur = resources-tur
+base.lang.ara = resources-ara
+base.lang.rus = resources-rus
+base.lang.por = resources-por
+base.lang.vie = resources-vie
+base.lang.deu = resources-deu
+base.lang.zsm = resources-zsm
+base.lang.lit = resources-lit
+base.lang.ita = resources-ita
+base.lang.fre = resources-fre
+base.lang.gre = resources-gre
+base.lang.ukr = resources-ukr
+base.lang.ind = resources-ind
+base.lang.eng = resources-eng
+base.lang.lav = resources-lav
+base.lang.spa = resources-spa
+base.lang.jpn = resources-jpn
+base.lang.tha = resources-tha
+base.lang.hrv = resources-hrv
+base.lang.slo = resources-slo
+base.lang.bul = resources-bul
+base.lang.slv = resources-slv
+
+
+# Set the round-360x360 family qualifier
+round-360x360 = $(round)
+round-360x360.resourcePath = $(round-360x360.resourcePath);resources-round-360x360
+round-360x360.personality = $(round-360x360.personality);resources-round-360x360
+
+# Set the round-360x360 language-specific string resources
+round-360x360.lang.hun = $(round-360x360.lang.hun);resources-round-360x360-hun
+round-360x360.lang.nob = $(round-360x360.lang.nob);resources-round-360x360-nob
+round-360x360.lang.swe = $(round-360x360.lang.swe);resources-round-360x360-swe
+round-360x360.lang.dut = $(round-360x360.lang.dut);resources-round-360x360-dut
+round-360x360.lang.heb = $(round-360x360.lang.heb);resources-round-360x360-heb
+round-360x360.lang.zhs = $(round-360x360.lang.zhs);resources-round-360x360-zhs
+round-360x360.lang.est = $(round-360x360.lang.est);resources-round-360x360-est
+round-360x360.lang.zht = $(round-360x360.lang.zht);resources-round-360x360-zht
+round-360x360.lang.fin = $(round-360x360.lang.fin);resources-round-360x360-fin
+round-360x360.lang.pol = $(round-360x360.lang.pol);resources-round-360x360-pol
+round-360x360.lang.kor = $(round-360x360.lang.kor);resources-round-360x360-kor
+round-360x360.lang.ces = $(round-360x360.lang.ces);resources-round-360x360-ces
+round-360x360.lang.dan = $(round-360x360.lang.dan);resources-round-360x360-dan
+round-360x360.lang.ron = $(round-360x360.lang.ron);resources-round-360x360-ron
+round-360x360.lang.tur = $(round-360x360.lang.tur);resources-round-360x360-tur
+round-360x360.lang.ara = $(round-360x360.lang.ara);resources-round-360x360-ara
+round-360x360.lang.rus = $(round-360x360.lang.rus);resources-round-360x360-rus
+round-360x360.lang.por = $(round-360x360.lang.por);resources-round-360x360-por
+round-360x360.lang.vie = $(round-360x360.lang.vie);resources-round-360x360-vie
+round-360x360.lang.deu = $(round-360x360.lang.deu);resources-round-360x360-deu
+round-360x360.lang.zsm = $(round-360x360.lang.zsm);resources-round-360x360-zsm
+round-360x360.lang.lit = $(round-360x360.lang.lit);resources-round-360x360-lit
+round-360x360.lang.ita = $(round-360x360.lang.ita);resources-round-360x360-ita
+round-360x360.lang.fre = $(round-360x360.lang.fre);resources-round-360x360-fre
+round-360x360.lang.gre = $(round-360x360.lang.gre);resources-round-360x360-gre
+round-360x360.lang.ukr = $(round-360x360.lang.ukr);resources-round-360x360-ukr
+round-360x360.lang.ind = $(round-360x360.lang.ind);resources-round-360x360-ind
+round-360x360.lang.eng = $(round-360x360.lang.eng);resources-round-360x360-eng
+round-360x360.lang.lav = $(round-360x360.lang.lav);resources-round-360x360-lav
+round-360x360.lang.spa = $(round-360x360.lang.spa);resources-round-360x360-spa
+round-360x360.lang.jpn = $(round-360x360.lang.jpn);resources-round-360x360-jpn
+round-360x360.lang.tha = $(round-360x360.lang.tha);resources-round-360x360-tha
+round-360x360.lang.hrv = $(round-360x360.lang.hrv);resources-round-360x360-hrv
+round-360x360.lang.slo = $(round-360x360.lang.slo);resources-round-360x360-slo
+round-360x360.lang.bul = $(round-360x360.lang.bul);resources-round-360x360-bul
+round-360x360.lang.slv = $(round-360x360.lang.slv);resources-round-360x360-slv
+
+
+# Set the round-454x454 family qualifier
+round-454x454 = $(round)
+round-454x454.resourcePath = $(round-454x454.resourcePath);resources-round-454x454
+round-454x454.personality = $(round-454x454.personality);resources-round-454x454
+
+# Set the round-454x454 language-specific string resources
+round-454x454.lang.hun = $(round-454x454.lang.hun);resources-round-454x454-hun
+round-454x454.lang.nob = $(round-454x454.lang.nob);resources-round-454x454-nob
+round-454x454.lang.swe = $(round-454x454.lang.swe);resources-round-454x454-swe
+round-454x454.lang.dut = $(round-454x454.lang.dut);resources-round-454x454-dut
+round-454x454.lang.heb = $(round-454x454.lang.heb);resources-round-454x454-heb
+round-454x454.lang.zhs = $(round-454x454.lang.zhs);resources-round-454x454-zhs
+round-454x454.lang.est = $(round-454x454.lang.est);resources-round-454x454-est
+round-454x454.lang.zht = $(round-454x454.lang.zht);resources-round-454x454-zht
+round-454x454.lang.fin = $(round-454x454.lang.fin);resources-round-454x454-fin
+round-454x454.lang.pol = $(round-454x454.lang.pol);resources-round-454x454-pol
+round-454x454.lang.kor = $(round-454x454.lang.kor);resources-round-454x454-kor
+round-454x454.lang.ces = $(round-454x454.lang.ces);resources-round-454x454-ces
+round-454x454.lang.dan = $(round-454x454.lang.dan);resources-round-454x454-dan
+round-454x454.lang.ron = $(round-454x454.lang.ron);resources-round-454x454-ron
+round-454x454.lang.tur = $(round-454x454.lang.tur);resources-round-454x454-tur
+round-454x454.lang.ara = $(round-454x454.lang.ara);resources-round-454x454-ara
+round-454x454.lang.rus = $(round-454x454.lang.rus);resources-round-454x454-rus
+round-454x454.lang.por = $(round-454x454.lang.por);resources-round-454x454-por
+round-454x454.lang.vie = $(round-454x454.lang.vie);resources-round-454x454-vie
+round-454x454.lang.deu = $(round-454x454.lang.deu);resources-round-454x454-deu
+round-454x454.lang.zsm = $(round-454x454.lang.zsm);resources-round-454x454-zsm
+round-454x454.lang.lit = $(round-454x454.lang.lit);resources-round-454x454-lit
+round-454x454.lang.ita = $(round-454x454.lang.ita);resources-round-454x454-ita
+round-454x454.lang.fre = $(round-454x454.lang.fre);resources-round-454x454-fre
+round-454x454.lang.gre = $(round-454x454.lang.gre);resources-round-454x454-gre
+round-454x454.lang.ukr = $(round-454x454.lang.ukr);resources-round-454x454-ukr
+round-454x454.lang.ind = $(round-454x454.lang.ind);resources-round-454x454-ind
+round-454x454.lang.eng = $(round-454x454.lang.eng);resources-round-454x454-eng
+round-454x454.lang.lav = $(round-454x454.lang.lav);resources-round-454x454-lav
+round-454x454.lang.spa = $(round-454x454.lang.spa);resources-round-454x454-spa
+round-454x454.lang.jpn = $(round-454x454.lang.jpn);resources-round-454x454-jpn
+round-454x454.lang.tha = $(round-454x454.lang.tha);resources-round-454x454-tha
+round-454x454.lang.hrv = $(round-454x454.lang.hrv);resources-round-454x454-hrv
+round-454x454.lang.slo = $(round-454x454.lang.slo);resources-round-454x454-slo
+round-454x454.lang.bul = $(round-454x454.lang.bul);resources-round-454x454-bul
+round-454x454.lang.slv = $(round-454x454.lang.slv);resources-round-454x454-slv
+
+
+# Set the round family qualifier
+round = $(base)
+round.resourcePath = $(round.resourcePath);resources-round
+round.personality = $(round.personality);resources-round
+
+# Set the round language-specific string resources
+round.lang.hun = $(round.lang.hun);resources-round-hun
+round.lang.nob = $(round.lang.nob);resources-round-nob
+round.lang.swe = $(round.lang.swe);resources-round-swe
+round.lang.dut = $(round.lang.dut);resources-round-dut
+round.lang.heb = $(round.lang.heb);resources-round-heb
+round.lang.zhs = $(round.lang.zhs);resources-round-zhs
+round.lang.est = $(round.lang.est);resources-round-est
+round.lang.zht = $(round.lang.zht);resources-round-zht
+round.lang.fin = $(round.lang.fin);resources-round-fin
+round.lang.pol = $(round.lang.pol);resources-round-pol
+round.lang.kor = $(round.lang.kor);resources-round-kor
+round.lang.ces = $(round.lang.ces);resources-round-ces
+round.lang.dan = $(round.lang.dan);resources-round-dan
+round.lang.ron = $(round.lang.ron);resources-round-ron
+round.lang.tur = $(round.lang.tur);resources-round-tur
+round.lang.ara = $(round.lang.ara);resources-round-ara
+round.lang.rus = $(round.lang.rus);resources-round-rus
+round.lang.por = $(round.lang.por);resources-round-por
+round.lang.vie = $(round.lang.vie);resources-round-vie
+round.lang.deu = $(round.lang.deu);resources-round-deu
+round.lang.zsm = $(round.lang.zsm);resources-round-zsm
+round.lang.lit = $(round.lang.lit);resources-round-lit
+round.lang.ita = $(round.lang.ita);resources-round-ita
+round.lang.fre = $(round.lang.fre);resources-round-fre
+round.lang.gre = $(round.lang.gre);resources-round-gre
+round.lang.ukr = $(round.lang.ukr);resources-round-ukr
+round.lang.ind = $(round.lang.ind);resources-round-ind
+round.lang.eng = $(round.lang.eng);resources-round-eng
+round.lang.lav = $(round.lang.lav);resources-round-lav
+round.lang.spa = $(round.lang.spa);resources-round-spa
+round.lang.jpn = $(round.lang.jpn);resources-round-jpn
+round.lang.tha = $(round.lang.tha);resources-round-tha
+round.lang.hrv = $(round.lang.hrv);resources-round-hrv
+round.lang.slo = $(round.lang.slo);resources-round-slo
+round.lang.bul = $(round.lang.bul);resources-round-bul
+round.lang.slv = $(round.lang.slv);resources-round-slv
+
+
+# Set the round-240x240 family qualifier
+round-240x240 = $(round)
+round-240x240.resourcePath = $(round-240x240.resourcePath);resources-round-240x240
+round-240x240.personality = $(round-240x240.personality);resources-round-240x240
+
+# Set the round-240x240 language-specific string resources
+round-240x240.lang.hun = $(round-240x240.lang.hun);resources-round-240x240-hun
+round-240x240.lang.nob = $(round-240x240.lang.nob);resources-round-240x240-nob
+round-240x240.lang.swe = $(round-240x240.lang.swe);resources-round-240x240-swe
+round-240x240.lang.dut = $(round-240x240.lang.dut);resources-round-240x240-dut
+round-240x240.lang.heb = $(round-240x240.lang.heb);resources-round-240x240-heb
+round-240x240.lang.zhs = $(round-240x240.lang.zhs);resources-round-240x240-zhs
+round-240x240.lang.est = $(round-240x240.lang.est);resources-round-240x240-est
+round-240x240.lang.zht = $(round-240x240.lang.zht);resources-round-240x240-zht
+round-240x240.lang.fin = $(round-240x240.lang.fin);resources-round-240x240-fin
+round-240x240.lang.pol = $(round-240x240.lang.pol);resources-round-240x240-pol
+round-240x240.lang.kor = $(round-240x240.lang.kor);resources-round-240x240-kor
+round-240x240.lang.ces = $(round-240x240.lang.ces);resources-round-240x240-ces
+round-240x240.lang.dan = $(round-240x240.lang.dan);resources-round-240x240-dan
+round-240x240.lang.ron = $(round-240x240.lang.ron);resources-round-240x240-ron
+round-240x240.lang.tur = $(round-240x240.lang.tur);resources-round-240x240-tur
+round-240x240.lang.ara = $(round-240x240.lang.ara);resources-round-240x240-ara
+round-240x240.lang.rus = $(round-240x240.lang.rus);resources-round-240x240-rus
+round-240x240.lang.por = $(round-240x240.lang.por);resources-round-240x240-por
+round-240x240.lang.vie = $(round-240x240.lang.vie);resources-round-240x240-vie
+round-240x240.lang.deu = $(round-240x240.lang.deu);resources-round-240x240-deu
+round-240x240.lang.zsm = $(round-240x240.lang.zsm);resources-round-240x240-zsm
+round-240x240.lang.lit = $(round-240x240.lang.lit);resources-round-240x240-lit
+round-240x240.lang.ita = $(round-240x240.lang.ita);resources-round-240x240-ita
+round-240x240.lang.fre = $(round-240x240.lang.fre);resources-round-240x240-fre
+round-240x240.lang.gre = $(round-240x240.lang.gre);resources-round-240x240-gre
+round-240x240.lang.ukr = $(round-240x240.lang.ukr);resources-round-240x240-ukr
+round-240x240.lang.ind = $(round-240x240.lang.ind);resources-round-240x240-ind
+round-240x240.lang.eng = $(round-240x240.lang.eng);resources-round-240x240-eng
+round-240x240.lang.lav = $(round-240x240.lang.lav);resources-round-240x240-lav
+round-240x240.lang.spa = $(round-240x240.lang.spa);resources-round-240x240-spa
+round-240x240.lang.jpn = $(round-240x240.lang.jpn);resources-round-240x240-jpn
+round-240x240.lang.tha = $(round-240x240.lang.tha);resources-round-240x240-tha
+round-240x240.lang.hrv = $(round-240x240.lang.hrv);resources-round-240x240-hrv
+round-240x240.lang.slo = $(round-240x240.lang.slo);resources-round-240x240-slo
+round-240x240.lang.bul = $(round-240x240.lang.bul);resources-round-240x240-bul
+round-240x240.lang.slv = $(round-240x240.lang.slv);resources-round-240x240-slv
+
+
+# Set the round-280x280 family qualifier
+round-280x280 = $(round)
+round-280x280.resourcePath = $(round-280x280.resourcePath);resources-round-280x280
+round-280x280.personality = $(round-280x280.personality);resources-round-280x280
+
+# Set the round-280x280 language-specific string resources
+round-280x280.lang.hun = $(round-280x280.lang.hun);resources-round-280x280-hun
+round-280x280.lang.nob = $(round-280x280.lang.nob);resources-round-280x280-nob
+round-280x280.lang.swe = $(round-280x280.lang.swe);resources-round-280x280-swe
+round-280x280.lang.dut = $(round-280x280.lang.dut);resources-round-280x280-dut
+round-280x280.lang.heb = $(round-280x280.lang.heb);resources-round-280x280-heb
+round-280x280.lang.zhs = $(round-280x280.lang.zhs);resources-round-280x280-zhs
+round-280x280.lang.est = $(round-280x280.lang.est);resources-round-280x280-est
+round-280x280.lang.zht = $(round-280x280.lang.zht);resources-round-280x280-zht
+round-280x280.lang.fin = $(round-280x280.lang.fin);resources-round-280x280-fin
+round-280x280.lang.pol = $(round-280x280.lang.pol);resources-round-280x280-pol
+round-280x280.lang.kor = $(round-280x280.lang.kor);resources-round-280x280-kor
+round-280x280.lang.ces = $(round-280x280.lang.ces);resources-round-280x280-ces
+round-280x280.lang.dan = $(round-280x280.lang.dan);resources-round-280x280-dan
+round-280x280.lang.ron = $(round-280x280.lang.ron);resources-round-280x280-ron
+round-280x280.lang.tur = $(round-280x280.lang.tur);resources-round-280x280-tur
+round-280x280.lang.ara = $(round-280x280.lang.ara);resources-round-280x280-ara
+round-280x280.lang.rus = $(round-280x280.lang.rus);resources-round-280x280-rus
+round-280x280.lang.por = $(round-280x280.lang.por);resources-round-280x280-por
+round-280x280.lang.vie = $(round-280x280.lang.vie);resources-round-280x280-vie
+round-280x280.lang.deu = $(round-280x280.lang.deu);resources-round-280x280-deu
+round-280x280.lang.zsm = $(round-280x280.lang.zsm);resources-round-280x280-zsm
+round-280x280.lang.lit = $(round-280x280.lang.lit);resources-round-280x280-lit
+round-280x280.lang.ita = $(round-280x280.lang.ita);resources-round-280x280-ita
+round-280x280.lang.fre = $(round-280x280.lang.fre);resources-round-280x280-fre
+round-280x280.lang.gre = $(round-280x280.lang.gre);resources-round-280x280-gre
+round-280x280.lang.ukr = $(round-280x280.lang.ukr);resources-round-280x280-ukr
+round-280x280.lang.ind = $(round-280x280.lang.ind);resources-round-280x280-ind
+round-280x280.lang.eng = $(round-280x280.lang.eng);resources-round-280x280-eng
+round-280x280.lang.lav = $(round-280x280.lang.lav);resources-round-280x280-lav
+round-280x280.lang.spa = $(round-280x280.lang.spa);resources-round-280x280-spa
+round-280x280.lang.jpn = $(round-280x280.lang.jpn);resources-round-280x280-jpn
+round-280x280.lang.tha = $(round-280x280.lang.tha);resources-round-280x280-tha
+round-280x280.lang.hrv = $(round-280x280.lang.hrv);resources-round-280x280-hrv
+round-280x280.lang.slo = $(round-280x280.lang.slo);resources-round-280x280-slo
+round-280x280.lang.bul = $(round-280x280.lang.bul);resources-round-280x280-bul
+round-280x280.lang.slv = $(round-280x280.lang.slv);resources-round-280x280-slv
+
+
+# Set the round-390x390 family qualifier
+round-390x390 = $(round)
+round-390x390.resourcePath = $(round-390x390.resourcePath);resources-round-390x390
+round-390x390.personality = $(round-390x390.personality);resources-round-390x390
+
+# Set the round-390x390 language-specific string resources
+round-390x390.lang.hun = $(round-390x390.lang.hun);resources-round-390x390-hun
+round-390x390.lang.nob = $(round-390x390.lang.nob);resources-round-390x390-nob
+round-390x390.lang.swe = $(round-390x390.lang.swe);resources-round-390x390-swe
+round-390x390.lang.dut = $(round-390x390.lang.dut);resources-round-390x390-dut
+round-390x390.lang.heb = $(round-390x390.lang.heb);resources-round-390x390-heb
+round-390x390.lang.zhs = $(round-390x390.lang.zhs);resources-round-390x390-zhs
+round-390x390.lang.est = $(round-390x390.lang.est);resources-round-390x390-est
+round-390x390.lang.zht = $(round-390x390.lang.zht);resources-round-390x390-zht
+round-390x390.lang.fin = $(round-390x390.lang.fin);resources-round-390x390-fin
+round-390x390.lang.pol = $(round-390x390.lang.pol);resources-round-390x390-pol
+round-390x390.lang.kor = $(round-390x390.lang.kor);resources-round-390x390-kor
+round-390x390.lang.ces = $(round-390x390.lang.ces);resources-round-390x390-ces
+round-390x390.lang.dan = $(round-390x390.lang.dan);resources-round-390x390-dan
+round-390x390.lang.ron = $(round-390x390.lang.ron);resources-round-390x390-ron
+round-390x390.lang.tur = $(round-390x390.lang.tur);resources-round-390x390-tur
+round-390x390.lang.ara = $(round-390x390.lang.ara);resources-round-390x390-ara
+round-390x390.lang.rus = $(round-390x390.lang.rus);resources-round-390x390-rus
+round-390x390.lang.por = $(round-390x390.lang.por);resources-round-390x390-por
+round-390x390.lang.vie = $(round-390x390.lang.vie);resources-round-390x390-vie
+round-390x390.lang.deu = $(round-390x390.lang.deu);resources-round-390x390-deu
+round-390x390.lang.zsm = $(round-390x390.lang.zsm);resources-round-390x390-zsm
+round-390x390.lang.lit = $(round-390x390.lang.lit);resources-round-390x390-lit
+round-390x390.lang.ita = $(round-390x390.lang.ita);resources-round-390x390-ita
+round-390x390.lang.fre = $(round-390x390.lang.fre);resources-round-390x390-fre
+round-390x390.lang.gre = $(round-390x390.lang.gre);resources-round-390x390-gre
+round-390x390.lang.ukr = $(round-390x390.lang.ukr);resources-round-390x390-ukr
+round-390x390.lang.ind = $(round-390x390.lang.ind);resources-round-390x390-ind
+round-390x390.lang.eng = $(round-390x390.lang.eng);resources-round-390x390-eng
+round-390x390.lang.lav = $(round-390x390.lang.lav);resources-round-390x390-lav
+round-390x390.lang.spa = $(round-390x390.lang.spa);resources-round-390x390-spa
+round-390x390.lang.jpn = $(round-390x390.lang.jpn);resources-round-390x390-jpn
+round-390x390.lang.tha = $(round-390x390.lang.tha);resources-round-390x390-tha
+round-390x390.lang.hrv = $(round-390x390.lang.hrv);resources-round-390x390-hrv
+round-390x390.lang.slo = $(round-390x390.lang.slo);resources-round-390x390-slo
+round-390x390.lang.bul = $(round-390x390.lang.bul);resources-round-390x390-bul
+round-390x390.lang.slv = $(round-390x390.lang.slv);resources-round-390x390-slv
+
+
+# Set the round-260x260 family qualifier
+round-260x260 = $(round)
+round-260x260.resourcePath = $(round-260x260.resourcePath);resources-round-260x260
+round-260x260.personality = $(round-260x260.personality);resources-round-260x260
+
+# Set the round-260x260 language-specific string resources
+round-260x260.lang.hun = $(round-260x260.lang.hun);resources-round-260x260-hun
+round-260x260.lang.nob = $(round-260x260.lang.nob);resources-round-260x260-nob
+round-260x260.lang.swe = $(round-260x260.lang.swe);resources-round-260x260-swe
+round-260x260.lang.dut = $(round-260x260.lang.dut);resources-round-260x260-dut
+round-260x260.lang.heb = $(round-260x260.lang.heb);resources-round-260x260-heb
+round-260x260.lang.zhs = $(round-260x260.lang.zhs);resources-round-260x260-zhs
+round-260x260.lang.est = $(round-260x260.lang.est);resources-round-260x260-est
+round-260x260.lang.zht = $(round-260x260.lang.zht);resources-round-260x260-zht
+round-260x260.lang.fin = $(round-260x260.lang.fin);resources-round-260x260-fin
+round-260x260.lang.pol = $(round-260x260.lang.pol);resources-round-260x260-pol
+round-260x260.lang.kor = $(round-260x260.lang.kor);resources-round-260x260-kor
+round-260x260.lang.ces = $(round-260x260.lang.ces);resources-round-260x260-ces
+round-260x260.lang.dan = $(round-260x260.lang.dan);resources-round-260x260-dan
+round-260x260.lang.ron = $(round-260x260.lang.ron);resources-round-260x260-ron
+round-260x260.lang.tur = $(round-260x260.lang.tur);resources-round-260x260-tur
+round-260x260.lang.ara = $(round-260x260.lang.ara);resources-round-260x260-ara
+round-260x260.lang.rus = $(round-260x260.lang.rus);resources-round-260x260-rus
+round-260x260.lang.por = $(round-260x260.lang.por);resources-round-260x260-por
+round-260x260.lang.vie = $(round-260x260.lang.vie);resources-round-260x260-vie
+round-260x260.lang.deu = $(round-260x260.lang.deu);resources-round-260x260-deu
+round-260x260.lang.zsm = $(round-260x260.lang.zsm);resources-round-260x260-zsm
+round-260x260.lang.lit = $(round-260x260.lang.lit);resources-round-260x260-lit
+round-260x260.lang.ita = $(round-260x260.lang.ita);resources-round-260x260-ita
+round-260x260.lang.fre = $(round-260x260.lang.fre);resources-round-260x260-fre
+round-260x260.lang.gre = $(round-260x260.lang.gre);resources-round-260x260-gre
+round-260x260.lang.ukr = $(round-260x260.lang.ukr);resources-round-260x260-ukr
+round-260x260.lang.ind = $(round-260x260.lang.ind);resources-round-260x260-ind
+round-260x260.lang.eng = $(round-260x260.lang.eng);resources-round-260x260-eng
+round-260x260.lang.lav = $(round-260x260.lang.lav);resources-round-260x260-lav
+round-260x260.lang.spa = $(round-260x260.lang.spa);resources-round-260x260-spa
+round-260x260.lang.jpn = $(round-260x260.lang.jpn);resources-round-260x260-jpn
+round-260x260.lang.tha = $(round-260x260.lang.tha);resources-round-260x260-tha
+round-260x260.lang.hrv = $(round-260x260.lang.hrv);resources-round-260x260-hrv
+round-260x260.lang.slo = $(round-260x260.lang.slo);resources-round-260x260-slo
+round-260x260.lang.bul = $(round-260x260.lang.bul);resources-round-260x260-bul
+round-260x260.lang.slv = $(round-260x260.lang.slv);resources-round-260x260-slv
+
+
+# Set the round-218x218 family qualifier
+round-218x218 = $(round)
+round-218x218.resourcePath = $(round-218x218.resourcePath);resources-round-218x218
+round-218x218.personality = $(round-218x218.personality);resources-round-218x218
+
+# Set the round-218x218 language-specific string resources
+round-218x218.lang.hun = $(round-218x218.lang.hun);resources-round-218x218-hun
+round-218x218.lang.nob = $(round-218x218.lang.nob);resources-round-218x218-nob
+round-218x218.lang.swe = $(round-218x218.lang.swe);resources-round-218x218-swe
+round-218x218.lang.dut = $(round-218x218.lang.dut);resources-round-218x218-dut
+round-218x218.lang.heb = $(round-218x218.lang.heb);resources-round-218x218-heb
+round-218x218.lang.zhs = $(round-218x218.lang.zhs);resources-round-218x218-zhs
+round-218x218.lang.est = $(round-218x218.lang.est);resources-round-218x218-est
+round-218x218.lang.zht = $(round-218x218.lang.zht);resources-round-218x218-zht
+round-218x218.lang.fin = $(round-218x218.lang.fin);resources-round-218x218-fin
+round-218x218.lang.pol = $(round-218x218.lang.pol);resources-round-218x218-pol
+round-218x218.lang.kor = $(round-218x218.lang.kor);resources-round-218x218-kor
+round-218x218.lang.ces = $(round-218x218.lang.ces);resources-round-218x218-ces
+round-218x218.lang.dan = $(round-218x218.lang.dan);resources-round-218x218-dan
+round-218x218.lang.ron = $(round-218x218.lang.ron);resources-round-218x218-ron
+round-218x218.lang.tur = $(round-218x218.lang.tur);resources-round-218x218-tur
+round-218x218.lang.ara = $(round-218x218.lang.ara);resources-round-218x218-ara
+round-218x218.lang.rus = $(round-218x218.lang.rus);resources-round-218x218-rus
+round-218x218.lang.por = $(round-218x218.lang.por);resources-round-218x218-por
+round-218x218.lang.vie = $(round-218x218.lang.vie);resources-round-218x218-vie
+round-218x218.lang.deu = $(round-218x218.lang.deu);resources-round-218x218-deu
+round-218x218.lang.zsm = $(round-218x218.lang.zsm);resources-round-218x218-zsm
+round-218x218.lang.lit = $(round-218x218.lang.lit);resources-round-218x218-lit
+round-218x218.lang.ita = $(round-218x218.lang.ita);resources-round-218x218-ita
+round-218x218.lang.fre = $(round-218x218.lang.fre);resources-round-218x218-fre
+round-218x218.lang.gre = $(round-218x218.lang.gre);resources-round-218x218-gre
+round-218x218.lang.ukr = $(round-218x218.lang.ukr);resources-round-218x218-ukr
+round-218x218.lang.ind = $(round-218x218.lang.ind);resources-round-218x218-ind
+round-218x218.lang.eng = $(round-218x218.lang.eng);resources-round-218x218-eng
+round-218x218.lang.lav = $(round-218x218.lang.lav);resources-round-218x218-lav
+round-218x218.lang.spa = $(round-218x218.lang.spa);resources-round-218x218-spa
+round-218x218.lang.jpn = $(round-218x218.lang.jpn);resources-round-218x218-jpn
+round-218x218.lang.tha = $(round-218x218.lang.tha);resources-round-218x218-tha
+round-218x218.lang.hrv = $(round-218x218.lang.hrv);resources-round-218x218-hrv
+round-218x218.lang.slo = $(round-218x218.lang.slo);resources-round-218x218-slo
+round-218x218.lang.bul = $(round-218x218.lang.bul);resources-round-218x218-bul
+round-218x218.lang.slv = $(round-218x218.lang.slv);resources-round-218x218-slv
+
+
+# Set the round-416x416 family qualifier
+round-416x416 = $(round)
+round-416x416.resourcePath = $(round-416x416.resourcePath);resources-round-416x416
+round-416x416.personality = $(round-416x416.personality);resources-round-416x416
+
+# Set the round-416x416 language-specific string resources
+round-416x416.lang.hun = $(round-416x416.lang.hun);resources-round-416x416-hun
+round-416x416.lang.nob = $(round-416x416.lang.nob);resources-round-416x416-nob
+round-416x416.lang.swe = $(round-416x416.lang.swe);resources-round-416x416-swe
+round-416x416.lang.dut = $(round-416x416.lang.dut);resources-round-416x416-dut
+round-416x416.lang.heb = $(round-416x416.lang.heb);resources-round-416x416-heb
+round-416x416.lang.zhs = $(round-416x416.lang.zhs);resources-round-416x416-zhs
+round-416x416.lang.est = $(round-416x416.lang.est);resources-round-416x416-est
+round-416x416.lang.zht = $(round-416x416.lang.zht);resources-round-416x416-zht
+round-416x416.lang.fin = $(round-416x416.lang.fin);resources-round-416x416-fin
+round-416x416.lang.pol = $(round-416x416.lang.pol);resources-round-416x416-pol
+round-416x416.lang.kor = $(round-416x416.lang.kor);resources-round-416x416-kor
+round-416x416.lang.ces = $(round-416x416.lang.ces);resources-round-416x416-ces
+round-416x416.lang.dan = $(round-416x416.lang.dan);resources-round-416x416-dan
+round-416x416.lang.ron = $(round-416x416.lang.ron);resources-round-416x416-ron
+round-416x416.lang.tur = $(round-416x416.lang.tur);resources-round-416x416-tur
+round-416x416.lang.ara = $(round-416x416.lang.ara);resources-round-416x416-ara
+round-416x416.lang.rus = $(round-416x416.lang.rus);resources-round-416x416-rus
+round-416x416.lang.por = $(round-416x416.lang.por);resources-round-416x416-por
+round-416x416.lang.vie = $(round-416x416.lang.vie);resources-round-416x416-vie
+round-416x416.lang.deu = $(round-416x416.lang.deu);resources-round-416x416-deu
+round-416x416.lang.zsm = $(round-416x416.lang.zsm);resources-round-416x416-zsm
+round-416x416.lang.lit = $(round-416x416.lang.lit);resources-round-416x416-lit
+round-416x416.lang.ita = $(round-416x416.lang.ita);resources-round-416x416-ita
+round-416x416.lang.fre = $(round-416x416.lang.fre);resources-round-416x416-fre
+round-416x416.lang.gre = $(round-416x416.lang.gre);resources-round-416x416-gre
+round-416x416.lang.ukr = $(round-416x416.lang.ukr);resources-round-416x416-ukr
+round-416x416.lang.ind = $(round-416x416.lang.ind);resources-round-416x416-ind
+round-416x416.lang.eng = $(round-416x416.lang.eng);resources-round-416x416-eng
+round-416x416.lang.lav = $(round-416x416.lang.lav);resources-round-416x416-lav
+round-416x416.lang.spa = $(round-416x416.lang.spa);resources-round-416x416-spa
+round-416x416.lang.jpn = $(round-416x416.lang.jpn);resources-round-416x416-jpn
+round-416x416.lang.tha = $(round-416x416.lang.tha);resources-round-416x416-tha
+round-416x416.lang.hrv = $(round-416x416.lang.hrv);resources-round-416x416-hrv
+round-416x416.lang.slo = $(round-416x416.lang.slo);resources-round-416x416-slo
+round-416x416.lang.bul = $(round-416x416.lang.bul);resources-round-416x416-bul
+round-416x416.lang.slv = $(round-416x416.lang.slv);resources-round-416x416-slv
+
+
+# Set the fr255s family qualifier
+fr255s = $(round-218x218)
+fr255s.resourcePath = $(fr255s.resourcePath);resources-fr255s
+fr255s.personality = $(fr255s.personality);$(devicesPath)\fr255s;resources-fr255s
+
+# Set the fr255s language-specific string resources
+fr255s.lang.ara = $(fr255s.lang.ara);resources-fr255s-ara
+fr255s.lang.bul = $(fr255s.lang.bul);resources-fr255s-bul
+fr255s.lang.ces = $(fr255s.lang.ces);resources-fr255s-ces
+fr255s.lang.dan = $(fr255s.lang.dan);resources-fr255s-dan
+fr255s.lang.deu = $(fr255s.lang.deu);resources-fr255s-deu
+fr255s.lang.dut = $(fr255s.lang.dut);resources-fr255s-dut
+fr255s.lang.eng = $(fr255s.lang.eng);resources-fr255s-eng
+fr255s.lang.est = $(fr255s.lang.est);resources-fr255s-est
+fr255s.lang.fin = $(fr255s.lang.fin);resources-fr255s-fin
+fr255s.lang.fre = $(fr255s.lang.fre);resources-fr255s-fre
+fr255s.lang.gre = $(fr255s.lang.gre);resources-fr255s-gre
+fr255s.lang.heb = $(fr255s.lang.heb);resources-fr255s-heb
+fr255s.lang.hrv = $(fr255s.lang.hrv);resources-fr255s-hrv
+fr255s.lang.hun = $(fr255s.lang.hun);resources-fr255s-hun
+fr255s.lang.ita = $(fr255s.lang.ita);resources-fr255s-ita
+fr255s.lang.lav = $(fr255s.lang.lav);resources-fr255s-lav
+fr255s.lang.lit = $(fr255s.lang.lit);resources-fr255s-lit
+fr255s.lang.nob = $(fr255s.lang.nob);resources-fr255s-nob
+fr255s.lang.pol = $(fr255s.lang.pol);resources-fr255s-pol
+fr255s.lang.por = $(fr255s.lang.por);resources-fr255s-por
+fr255s.lang.ron = $(fr255s.lang.ron);resources-fr255s-ron
+fr255s.lang.rus = $(fr255s.lang.rus);resources-fr255s-rus
+fr255s.lang.slo = $(fr255s.lang.slo);resources-fr255s-slo
+fr255s.lang.slv = $(fr255s.lang.slv);resources-fr255s-slv
+fr255s.lang.spa = $(fr255s.lang.spa);resources-fr255s-spa
+fr255s.lang.swe = $(fr255s.lang.swe);resources-fr255s-swe
+fr255s.lang.tur = $(fr255s.lang.tur);resources-fr255s-tur
+fr255s.lang.ukr = $(fr255s.lang.ukr);resources-fr255s-ukr
+fr255s.lang.ind = $(fr255s.lang.ind);resources-fr255s-ind
+fr255s.lang.zsm = $(fr255s.lang.zsm);resources-fr255s-zsm
+fr255s.lang.zhs = $(fr255s.lang.zhs);resources-fr255s-zhs
+fr255s.lang.zht = $(fr255s.lang.zht);resources-fr255s-zht
+fr255s.lang.jpn = $(fr255s.lang.jpn);resources-fr255s-jpn
+fr255s.lang.kor = $(fr255s.lang.kor);resources-fr255s-kor
+fr255s.lang.tha = $(fr255s.lang.tha);resources-fr255s-tha
+fr255s.lang.vie = $(fr255s.lang.vie);resources-fr255s-vie
+
+
+# Set the fr265s family qualifier
+fr265s = $(round-360x360)
+fr265s.resourcePath = $(fr265s.resourcePath);resources-fr265s
+fr265s.personality = $(fr265s.personality);$(devicesPath)\fr265s;resources-fr265s
+
+# Set the fr265s language-specific string resources
+fr265s.lang.ara = $(fr265s.lang.ara);resources-fr265s-ara
+fr265s.lang.bul = $(fr265s.lang.bul);resources-fr265s-bul
+fr265s.lang.ces = $(fr265s.lang.ces);resources-fr265s-ces
+fr265s.lang.dan = $(fr265s.lang.dan);resources-fr265s-dan
+fr265s.lang.deu = $(fr265s.lang.deu);resources-fr265s-deu
+fr265s.lang.dut = $(fr265s.lang.dut);resources-fr265s-dut
+fr265s.lang.eng = $(fr265s.lang.eng);resources-fr265s-eng
+fr265s.lang.est = $(fr265s.lang.est);resources-fr265s-est
+fr265s.lang.fin = $(fr265s.lang.fin);resources-fr265s-fin
+fr265s.lang.fre = $(fr265s.lang.fre);resources-fr265s-fre
+fr265s.lang.gre = $(fr265s.lang.gre);resources-fr265s-gre
+fr265s.lang.heb = $(fr265s.lang.heb);resources-fr265s-heb
+fr265s.lang.hrv = $(fr265s.lang.hrv);resources-fr265s-hrv
+fr265s.lang.hun = $(fr265s.lang.hun);resources-fr265s-hun
+fr265s.lang.ita = $(fr265s.lang.ita);resources-fr265s-ita
+fr265s.lang.lav = $(fr265s.lang.lav);resources-fr265s-lav
+fr265s.lang.lit = $(fr265s.lang.lit);resources-fr265s-lit
+fr265s.lang.nob = $(fr265s.lang.nob);resources-fr265s-nob
+fr265s.lang.pol = $(fr265s.lang.pol);resources-fr265s-pol
+fr265s.lang.por = $(fr265s.lang.por);resources-fr265s-por
+fr265s.lang.ron = $(fr265s.lang.ron);resources-fr265s-ron
+fr265s.lang.rus = $(fr265s.lang.rus);resources-fr265s-rus
+fr265s.lang.slo = $(fr265s.lang.slo);resources-fr265s-slo
+fr265s.lang.slv = $(fr265s.lang.slv);resources-fr265s-slv
+fr265s.lang.spa = $(fr265s.lang.spa);resources-fr265s-spa
+fr265s.lang.swe = $(fr265s.lang.swe);resources-fr265s-swe
+fr265s.lang.tur = $(fr265s.lang.tur);resources-fr265s-tur
+fr265s.lang.ukr = $(fr265s.lang.ukr);resources-fr265s-ukr
+fr265s.lang.ind = $(fr265s.lang.ind);resources-fr265s-ind
+fr265s.lang.zsm = $(fr265s.lang.zsm);resources-fr265s-zsm
+fr265s.lang.vie = $(fr265s.lang.vie);resources-fr265s-vie
+fr265s.lang.zhs = $(fr265s.lang.zhs);resources-fr265s-zhs
+fr265s.lang.zht = $(fr265s.lang.zht);resources-fr265s-zht
+fr265s.lang.jpn = $(fr265s.lang.jpn);resources-fr265s-jpn
+fr265s.lang.kor = $(fr265s.lang.kor);resources-fr265s-kor
+fr265s.lang.tha = $(fr265s.lang.tha);resources-fr265s-tha
+
+
+# Set the venu3s family qualifier
+venu3s = $(round-390x390)
+venu3s.resourcePath = $(venu3s.resourcePath);resources-venu3s
+venu3s.personality = $(venu3s.personality);$(devicesPath)\venu3s;resources-venu3s
+
+# Set the venu3s language-specific string resources
+venu3s.lang.ara = $(venu3s.lang.ara);resources-venu3s-ara
+venu3s.lang.bul = $(venu3s.lang.bul);resources-venu3s-bul
+venu3s.lang.ces = $(venu3s.lang.ces);resources-venu3s-ces
+venu3s.lang.dan = $(venu3s.lang.dan);resources-venu3s-dan
+venu3s.lang.deu = $(venu3s.lang.deu);resources-venu3s-deu
+venu3s.lang.dut = $(venu3s.lang.dut);resources-venu3s-dut
+venu3s.lang.eng = $(venu3s.lang.eng);resources-venu3s-eng
+venu3s.lang.est = $(venu3s.lang.est);resources-venu3s-est
+venu3s.lang.fin = $(venu3s.lang.fin);resources-venu3s-fin
+venu3s.lang.fre = $(venu3s.lang.fre);resources-venu3s-fre
+venu3s.lang.gre = $(venu3s.lang.gre);resources-venu3s-gre
+venu3s.lang.heb = $(venu3s.lang.heb);resources-venu3s-heb
+venu3s.lang.hrv = $(venu3s.lang.hrv);resources-venu3s-hrv
+venu3s.lang.hun = $(venu3s.lang.hun);resources-venu3s-hun
+venu3s.lang.ita = $(venu3s.lang.ita);resources-venu3s-ita
+venu3s.lang.lav = $(venu3s.lang.lav);resources-venu3s-lav
+venu3s.lang.lit = $(venu3s.lang.lit);resources-venu3s-lit
+venu3s.lang.nob = $(venu3s.lang.nob);resources-venu3s-nob
+venu3s.lang.pol = $(venu3s.lang.pol);resources-venu3s-pol
+venu3s.lang.por = $(venu3s.lang.por);resources-venu3s-por
+venu3s.lang.ron = $(venu3s.lang.ron);resources-venu3s-ron
+venu3s.lang.rus = $(venu3s.lang.rus);resources-venu3s-rus
+venu3s.lang.slo = $(venu3s.lang.slo);resources-venu3s-slo
+venu3s.lang.slv = $(venu3s.lang.slv);resources-venu3s-slv
+venu3s.lang.spa = $(venu3s.lang.spa);resources-venu3s-spa
+venu3s.lang.swe = $(venu3s.lang.swe);resources-venu3s-swe
+venu3s.lang.tur = $(venu3s.lang.tur);resources-venu3s-tur
+venu3s.lang.ukr = $(venu3s.lang.ukr);resources-venu3s-ukr
+venu3s.lang.ind = $(venu3s.lang.ind);resources-venu3s-ind
+venu3s.lang.zsm = $(venu3s.lang.zsm);resources-venu3s-zsm
+venu3s.lang.vie = $(venu3s.lang.vie);resources-venu3s-vie
+venu3s.lang.zhs = $(venu3s.lang.zhs);resources-venu3s-zhs
+venu3s.lang.zht = $(venu3s.lang.zht);resources-venu3s-zht
+venu3s.lang.jpn = $(venu3s.lang.jpn);resources-venu3s-jpn
+venu3s.lang.kor = $(venu3s.lang.kor);resources-venu3s-kor
+venu3s.lang.tha = $(venu3s.lang.tha);resources-venu3s-tha
+
+
+# Set the fr255m family qualifier
+fr255m = $(round-260x260)
+fr255m.resourcePath = $(fr255m.resourcePath);resources-fr255m
+fr255m.personality = $(fr255m.personality);$(devicesPath)\fr255m;resources-fr255m
+
+# Set the fr255m language-specific string resources
+fr255m.lang.ara = $(fr255m.lang.ara);resources-fr255m-ara
+fr255m.lang.bul = $(fr255m.lang.bul);resources-fr255m-bul
+fr255m.lang.ces = $(fr255m.lang.ces);resources-fr255m-ces
+fr255m.lang.dan = $(fr255m.lang.dan);resources-fr255m-dan
+fr255m.lang.deu = $(fr255m.lang.deu);resources-fr255m-deu
+fr255m.lang.dut = $(fr255m.lang.dut);resources-fr255m-dut
+fr255m.lang.eng = $(fr255m.lang.eng);resources-fr255m-eng
+fr255m.lang.est = $(fr255m.lang.est);resources-fr255m-est
+fr255m.lang.fin = $(fr255m.lang.fin);resources-fr255m-fin
+fr255m.lang.fre = $(fr255m.lang.fre);resources-fr255m-fre
+fr255m.lang.gre = $(fr255m.lang.gre);resources-fr255m-gre
+fr255m.lang.heb = $(fr255m.lang.heb);resources-fr255m-heb
+fr255m.lang.hrv = $(fr255m.lang.hrv);resources-fr255m-hrv
+fr255m.lang.hun = $(fr255m.lang.hun);resources-fr255m-hun
+fr255m.lang.ita = $(fr255m.lang.ita);resources-fr255m-ita
+fr255m.lang.lav = $(fr255m.lang.lav);resources-fr255m-lav
+fr255m.lang.lit = $(fr255m.lang.lit);resources-fr255m-lit
+fr255m.lang.nob = $(fr255m.lang.nob);resources-fr255m-nob
+fr255m.lang.pol = $(fr255m.lang.pol);resources-fr255m-pol
+fr255m.lang.por = $(fr255m.lang.por);resources-fr255m-por
+fr255m.lang.ron = $(fr255m.lang.ron);resources-fr255m-ron
+fr255m.lang.rus = $(fr255m.lang.rus);resources-fr255m-rus
+fr255m.lang.slo = $(fr255m.lang.slo);resources-fr255m-slo
+fr255m.lang.slv = $(fr255m.lang.slv);resources-fr255m-slv
+fr255m.lang.spa = $(fr255m.lang.spa);resources-fr255m-spa
+fr255m.lang.swe = $(fr255m.lang.swe);resources-fr255m-swe
+fr255m.lang.tur = $(fr255m.lang.tur);resources-fr255m-tur
+fr255m.lang.ukr = $(fr255m.lang.ukr);resources-fr255m-ukr
+fr255m.lang.ind = $(fr255m.lang.ind);resources-fr255m-ind
+fr255m.lang.zsm = $(fr255m.lang.zsm);resources-fr255m-zsm
+fr255m.lang.zhs = $(fr255m.lang.zhs);resources-fr255m-zhs
+fr255m.lang.zht = $(fr255m.lang.zht);resources-fr255m-zht
+fr255m.lang.jpn = $(fr255m.lang.jpn);resources-fr255m-jpn
+fr255m.lang.kor = $(fr255m.lang.kor);resources-fr255m-kor
+fr255m.lang.tha = $(fr255m.lang.tha);resources-fr255m-tha
+fr255m.lang.vie = $(fr255m.lang.vie);resources-fr255m-vie
+
+
+# Set the fenix7x family qualifier
+fenix7x = $(round-280x280)
+fenix7x.resourcePath = $(fenix7x.resourcePath);resources-fenix7x
+fenix7x.personality = $(fenix7x.personality);$(devicesPath)\fenix7x;resources-fenix7x
+
+# Set the fenix7x language-specific string resources
+fenix7x.lang.ara = $(fenix7x.lang.ara);resources-fenix7x-ara
+fenix7x.lang.bul = $(fenix7x.lang.bul);resources-fenix7x-bul
+fenix7x.lang.ces = $(fenix7x.lang.ces);resources-fenix7x-ces
+fenix7x.lang.dan = $(fenix7x.lang.dan);resources-fenix7x-dan
+fenix7x.lang.deu = $(fenix7x.lang.deu);resources-fenix7x-deu
+fenix7x.lang.dut = $(fenix7x.lang.dut);resources-fenix7x-dut
+fenix7x.lang.eng = $(fenix7x.lang.eng);resources-fenix7x-eng
+fenix7x.lang.est = $(fenix7x.lang.est);resources-fenix7x-est
+fenix7x.lang.fin = $(fenix7x.lang.fin);resources-fenix7x-fin
+fenix7x.lang.fre = $(fenix7x.lang.fre);resources-fenix7x-fre
+fenix7x.lang.gre = $(fenix7x.lang.gre);resources-fenix7x-gre
+fenix7x.lang.heb = $(fenix7x.lang.heb);resources-fenix7x-heb
+fenix7x.lang.hrv = $(fenix7x.lang.hrv);resources-fenix7x-hrv
+fenix7x.lang.hun = $(fenix7x.lang.hun);resources-fenix7x-hun
+fenix7x.lang.ita = $(fenix7x.lang.ita);resources-fenix7x-ita
+fenix7x.lang.lav = $(fenix7x.lang.lav);resources-fenix7x-lav
+fenix7x.lang.lit = $(fenix7x.lang.lit);resources-fenix7x-lit
+fenix7x.lang.nob = $(fenix7x.lang.nob);resources-fenix7x-nob
+fenix7x.lang.pol = $(fenix7x.lang.pol);resources-fenix7x-pol
+fenix7x.lang.por = $(fenix7x.lang.por);resources-fenix7x-por
+fenix7x.lang.ron = $(fenix7x.lang.ron);resources-fenix7x-ron
+fenix7x.lang.rus = $(fenix7x.lang.rus);resources-fenix7x-rus
+fenix7x.lang.slo = $(fenix7x.lang.slo);resources-fenix7x-slo
+fenix7x.lang.slv = $(fenix7x.lang.slv);resources-fenix7x-slv
+fenix7x.lang.spa = $(fenix7x.lang.spa);resources-fenix7x-spa
+fenix7x.lang.swe = $(fenix7x.lang.swe);resources-fenix7x-swe
+fenix7x.lang.tur = $(fenix7x.lang.tur);resources-fenix7x-tur
+fenix7x.lang.ukr = $(fenix7x.lang.ukr);resources-fenix7x-ukr
+fenix7x.lang.ind = $(fenix7x.lang.ind);resources-fenix7x-ind
+fenix7x.lang.zsm = $(fenix7x.lang.zsm);resources-fenix7x-zsm
+fenix7x.lang.vie = $(fenix7x.lang.vie);resources-fenix7x-vie
+fenix7x.lang.zhs = $(fenix7x.lang.zhs);resources-fenix7x-zhs
+fenix7x.lang.zht = $(fenix7x.lang.zht);resources-fenix7x-zht
+fenix7x.lang.jpn = $(fenix7x.lang.jpn);resources-fenix7x-jpn
+fenix7x.lang.kor = $(fenix7x.lang.kor);resources-fenix7x-kor
+fenix7x.lang.tha = $(fenix7x.lang.tha);resources-fenix7x-tha
+
+
+# Set the fenix7s family qualifier
+fenix7s = $(round-240x240)
+fenix7s.resourcePath = $(fenix7s.resourcePath);resources-fenix7s
+fenix7s.personality = $(fenix7s.personality);$(devicesPath)\fenix7s;resources-fenix7s
+
+# Set the fenix7s language-specific string resources
+fenix7s.lang.ara = $(fenix7s.lang.ara);resources-fenix7s-ara
+fenix7s.lang.bul = $(fenix7s.lang.bul);resources-fenix7s-bul
+fenix7s.lang.ces = $(fenix7s.lang.ces);resources-fenix7s-ces
+fenix7s.lang.dan = $(fenix7s.lang.dan);resources-fenix7s-dan
+fenix7s.lang.deu = $(fenix7s.lang.deu);resources-fenix7s-deu
+fenix7s.lang.dut = $(fenix7s.lang.dut);resources-fenix7s-dut
+fenix7s.lang.eng = $(fenix7s.lang.eng);resources-fenix7s-eng
+fenix7s.lang.est = $(fenix7s.lang.est);resources-fenix7s-est
+fenix7s.lang.fin = $(fenix7s.lang.fin);resources-fenix7s-fin
+fenix7s.lang.fre = $(fenix7s.lang.fre);resources-fenix7s-fre
+fenix7s.lang.gre = $(fenix7s.lang.gre);resources-fenix7s-gre
+fenix7s.lang.heb = $(fenix7s.lang.heb);resources-fenix7s-heb
+fenix7s.lang.hrv = $(fenix7s.lang.hrv);resources-fenix7s-hrv
+fenix7s.lang.hun = $(fenix7s.lang.hun);resources-fenix7s-hun
+fenix7s.lang.ita = $(fenix7s.lang.ita);resources-fenix7s-ita
+fenix7s.lang.lav = $(fenix7s.lang.lav);resources-fenix7s-lav
+fenix7s.lang.lit = $(fenix7s.lang.lit);resources-fenix7s-lit
+fenix7s.lang.nob = $(fenix7s.lang.nob);resources-fenix7s-nob
+fenix7s.lang.pol = $(fenix7s.lang.pol);resources-fenix7s-pol
+fenix7s.lang.por = $(fenix7s.lang.por);resources-fenix7s-por
+fenix7s.lang.ron = $(fenix7s.lang.ron);resources-fenix7s-ron
+fenix7s.lang.rus = $(fenix7s.lang.rus);resources-fenix7s-rus
+fenix7s.lang.slo = $(fenix7s.lang.slo);resources-fenix7s-slo
+fenix7s.lang.slv = $(fenix7s.lang.slv);resources-fenix7s-slv
+fenix7s.lang.spa = $(fenix7s.lang.spa);resources-fenix7s-spa
+fenix7s.lang.swe = $(fenix7s.lang.swe);resources-fenix7s-swe
+fenix7s.lang.tur = $(fenix7s.lang.tur);resources-fenix7s-tur
+fenix7s.lang.ukr = $(fenix7s.lang.ukr);resources-fenix7s-ukr
+fenix7s.lang.ind = $(fenix7s.lang.ind);resources-fenix7s-ind
+fenix7s.lang.zsm = $(fenix7s.lang.zsm);resources-fenix7s-zsm
+fenix7s.lang.vie = $(fenix7s.lang.vie);resources-fenix7s-vie
+fenix7s.lang.zhs = $(fenix7s.lang.zhs);resources-fenix7s-zhs
+fenix7s.lang.zht = $(fenix7s.lang.zht);resources-fenix7s-zht
+fenix7s.lang.jpn = $(fenix7s.lang.jpn);resources-fenix7s-jpn
+fenix7s.lang.kor = $(fenix7s.lang.kor);resources-fenix7s-kor
+fenix7s.lang.tha = $(fenix7s.lang.tha);resources-fenix7s-tha
+
+
+# Set the fenix7pronowifi family qualifier
+fenix7pronowifi = $(round-260x260)
+fenix7pronowifi.resourcePath = $(fenix7pronowifi.resourcePath);resources-fenix7pronowifi
+fenix7pronowifi.personality = $(fenix7pronowifi.personality);$(devicesPath)\fenix7pronowifi;resources-fenix7pronowifi
+
+# Set the fenix7pronowifi language-specific string resources
+fenix7pronowifi.lang.ara = $(fenix7pronowifi.lang.ara);resources-fenix7pronowifi-ara
+fenix7pronowifi.lang.bul = $(fenix7pronowifi.lang.bul);resources-fenix7pronowifi-bul
+fenix7pronowifi.lang.ces = $(fenix7pronowifi.lang.ces);resources-fenix7pronowifi-ces
+fenix7pronowifi.lang.dan = $(fenix7pronowifi.lang.dan);resources-fenix7pronowifi-dan
+fenix7pronowifi.lang.deu = $(fenix7pronowifi.lang.deu);resources-fenix7pronowifi-deu
+fenix7pronowifi.lang.dut = $(fenix7pronowifi.lang.dut);resources-fenix7pronowifi-dut
+fenix7pronowifi.lang.eng = $(fenix7pronowifi.lang.eng);resources-fenix7pronowifi-eng
+fenix7pronowifi.lang.est = $(fenix7pronowifi.lang.est);resources-fenix7pronowifi-est
+fenix7pronowifi.lang.fin = $(fenix7pronowifi.lang.fin);resources-fenix7pronowifi-fin
+fenix7pronowifi.lang.fre = $(fenix7pronowifi.lang.fre);resources-fenix7pronowifi-fre
+fenix7pronowifi.lang.gre = $(fenix7pronowifi.lang.gre);resources-fenix7pronowifi-gre
+fenix7pronowifi.lang.heb = $(fenix7pronowifi.lang.heb);resources-fenix7pronowifi-heb
+fenix7pronowifi.lang.hrv = $(fenix7pronowifi.lang.hrv);resources-fenix7pronowifi-hrv
+fenix7pronowifi.lang.hun = $(fenix7pronowifi.lang.hun);resources-fenix7pronowifi-hun
+fenix7pronowifi.lang.ita = $(fenix7pronowifi.lang.ita);resources-fenix7pronowifi-ita
+fenix7pronowifi.lang.lav = $(fenix7pronowifi.lang.lav);resources-fenix7pronowifi-lav
+fenix7pronowifi.lang.lit = $(fenix7pronowifi.lang.lit);resources-fenix7pronowifi-lit
+fenix7pronowifi.lang.nob = $(fenix7pronowifi.lang.nob);resources-fenix7pronowifi-nob
+fenix7pronowifi.lang.pol = $(fenix7pronowifi.lang.pol);resources-fenix7pronowifi-pol
+fenix7pronowifi.lang.por = $(fenix7pronowifi.lang.por);resources-fenix7pronowifi-por
+fenix7pronowifi.lang.ron = $(fenix7pronowifi.lang.ron);resources-fenix7pronowifi-ron
+fenix7pronowifi.lang.rus = $(fenix7pronowifi.lang.rus);resources-fenix7pronowifi-rus
+fenix7pronowifi.lang.slo = $(fenix7pronowifi.lang.slo);resources-fenix7pronowifi-slo
+fenix7pronowifi.lang.slv = $(fenix7pronowifi.lang.slv);resources-fenix7pronowifi-slv
+fenix7pronowifi.lang.spa = $(fenix7pronowifi.lang.spa);resources-fenix7pronowifi-spa
+fenix7pronowifi.lang.swe = $(fenix7pronowifi.lang.swe);resources-fenix7pronowifi-swe
+fenix7pronowifi.lang.tur = $(fenix7pronowifi.lang.tur);resources-fenix7pronowifi-tur
+fenix7pronowifi.lang.ukr = $(fenix7pronowifi.lang.ukr);resources-fenix7pronowifi-ukr
+fenix7pronowifi.lang.ind = $(fenix7pronowifi.lang.ind);resources-fenix7pronowifi-ind
+fenix7pronowifi.lang.zsm = $(fenix7pronowifi.lang.zsm);resources-fenix7pronowifi-zsm
+fenix7pronowifi.lang.vie = $(fenix7pronowifi.lang.vie);resources-fenix7pronowifi-vie
+fenix7pronowifi.lang.zhs = $(fenix7pronowifi.lang.zhs);resources-fenix7pronowifi-zhs
+fenix7pronowifi.lang.zht = $(fenix7pronowifi.lang.zht);resources-fenix7pronowifi-zht
+fenix7pronowifi.lang.jpn = $(fenix7pronowifi.lang.jpn);resources-fenix7pronowifi-jpn
+fenix7pronowifi.lang.kor = $(fenix7pronowifi.lang.kor);resources-fenix7pronowifi-kor
+fenix7pronowifi.lang.tha = $(fenix7pronowifi.lang.tha);resources-fenix7pronowifi-tha
+
+
+# Set the marq2 family qualifier
+marq2 = $(round-390x390)
+marq2.resourcePath = $(marq2.resourcePath);resources-marq2
+marq2.personality = $(marq2.personality);$(devicesPath)\marq2;resources-marq2
+
+# Set the marq2 language-specific string resources
+marq2.lang.ara = $(marq2.lang.ara);resources-marq2-ara
+marq2.lang.bul = $(marq2.lang.bul);resources-marq2-bul
+marq2.lang.ces = $(marq2.lang.ces);resources-marq2-ces
+marq2.lang.dan = $(marq2.lang.dan);resources-marq2-dan
+marq2.lang.deu = $(marq2.lang.deu);resources-marq2-deu
+marq2.lang.dut = $(marq2.lang.dut);resources-marq2-dut
+marq2.lang.eng = $(marq2.lang.eng);resources-marq2-eng
+marq2.lang.est = $(marq2.lang.est);resources-marq2-est
+marq2.lang.fin = $(marq2.lang.fin);resources-marq2-fin
+marq2.lang.fre = $(marq2.lang.fre);resources-marq2-fre
+marq2.lang.gre = $(marq2.lang.gre);resources-marq2-gre
+marq2.lang.heb = $(marq2.lang.heb);resources-marq2-heb
+marq2.lang.hrv = $(marq2.lang.hrv);resources-marq2-hrv
+marq2.lang.hun = $(marq2.lang.hun);resources-marq2-hun
+marq2.lang.ita = $(marq2.lang.ita);resources-marq2-ita
+marq2.lang.lav = $(marq2.lang.lav);resources-marq2-lav
+marq2.lang.lit = $(marq2.lang.lit);resources-marq2-lit
+marq2.lang.nob = $(marq2.lang.nob);resources-marq2-nob
+marq2.lang.pol = $(marq2.lang.pol);resources-marq2-pol
+marq2.lang.por = $(marq2.lang.por);resources-marq2-por
+marq2.lang.ron = $(marq2.lang.ron);resources-marq2-ron
+marq2.lang.rus = $(marq2.lang.rus);resources-marq2-rus
+marq2.lang.slo = $(marq2.lang.slo);resources-marq2-slo
+marq2.lang.slv = $(marq2.lang.slv);resources-marq2-slv
+marq2.lang.spa = $(marq2.lang.spa);resources-marq2-spa
+marq2.lang.swe = $(marq2.lang.swe);resources-marq2-swe
+marq2.lang.tur = $(marq2.lang.tur);resources-marq2-tur
+marq2.lang.ukr = $(marq2.lang.ukr);resources-marq2-ukr
+marq2.lang.ind = $(marq2.lang.ind);resources-marq2-ind
+marq2.lang.zsm = $(marq2.lang.zsm);resources-marq2-zsm
+marq2.lang.vie = $(marq2.lang.vie);resources-marq2-vie
+marq2.lang.zhs = $(marq2.lang.zhs);resources-marq2-zhs
+marq2.lang.zht = $(marq2.lang.zht);resources-marq2-zht
+marq2.lang.jpn = $(marq2.lang.jpn);resources-marq2-jpn
+marq2.lang.kor = $(marq2.lang.kor);resources-marq2-kor
+marq2.lang.tha = $(marq2.lang.tha);resources-marq2-tha
+
+
+# Set the venu3 family qualifier
+venu3 = $(round-454x454)
+venu3.resourcePath = $(venu3.resourcePath);resources-venu3
+venu3.personality = $(venu3.personality);$(devicesPath)\venu3;resources-venu3
+
+# Set the venu3 language-specific string resources
+venu3.lang.ara = $(venu3.lang.ara);resources-venu3-ara
+venu3.lang.bul = $(venu3.lang.bul);resources-venu3-bul
+venu3.lang.ces = $(venu3.lang.ces);resources-venu3-ces
+venu3.lang.dan = $(venu3.lang.dan);resources-venu3-dan
+venu3.lang.deu = $(venu3.lang.deu);resources-venu3-deu
+venu3.lang.dut = $(venu3.lang.dut);resources-venu3-dut
+venu3.lang.eng = $(venu3.lang.eng);resources-venu3-eng
+venu3.lang.est = $(venu3.lang.est);resources-venu3-est
+venu3.lang.fin = $(venu3.lang.fin);resources-venu3-fin
+venu3.lang.fre = $(venu3.lang.fre);resources-venu3-fre
+venu3.lang.gre = $(venu3.lang.gre);resources-venu3-gre
+venu3.lang.heb = $(venu3.lang.heb);resources-venu3-heb
+venu3.lang.hrv = $(venu3.lang.hrv);resources-venu3-hrv
+venu3.lang.hun = $(venu3.lang.hun);resources-venu3-hun
+venu3.lang.ita = $(venu3.lang.ita);resources-venu3-ita
+venu3.lang.lav = $(venu3.lang.lav);resources-venu3-lav
+venu3.lang.lit = $(venu3.lang.lit);resources-venu3-lit
+venu3.lang.nob = $(venu3.lang.nob);resources-venu3-nob
+venu3.lang.pol = $(venu3.lang.pol);resources-venu3-pol
+venu3.lang.por = $(venu3.lang.por);resources-venu3-por
+venu3.lang.ron = $(venu3.lang.ron);resources-venu3-ron
+venu3.lang.rus = $(venu3.lang.rus);resources-venu3-rus
+venu3.lang.slo = $(venu3.lang.slo);resources-venu3-slo
+venu3.lang.slv = $(venu3.lang.slv);resources-venu3-slv
+venu3.lang.spa = $(venu3.lang.spa);resources-venu3-spa
+venu3.lang.swe = $(venu3.lang.swe);resources-venu3-swe
+venu3.lang.tur = $(venu3.lang.tur);resources-venu3-tur
+venu3.lang.ukr = $(venu3.lang.ukr);resources-venu3-ukr
+venu3.lang.ind = $(venu3.lang.ind);resources-venu3-ind
+venu3.lang.zsm = $(venu3.lang.zsm);resources-venu3-zsm
+venu3.lang.vie = $(venu3.lang.vie);resources-venu3-vie
+venu3.lang.zhs = $(venu3.lang.zhs);resources-venu3-zhs
+venu3.lang.zht = $(venu3.lang.zht);resources-venu3-zht
+venu3.lang.jpn = $(venu3.lang.jpn);resources-venu3-jpn
+venu3.lang.kor = $(venu3.lang.kor);resources-venu3-kor
+venu3.lang.tha = $(venu3.lang.tha);resources-venu3-tha
+
+
+# Set the fr255 family qualifier
+fr255 = $(round-260x260)
+fr255.resourcePath = $(fr255.resourcePath);resources-fr255
+fr255.personality = $(fr255.personality);$(devicesPath)\fr255;resources-fr255
+
+# Set the fr255 language-specific string resources
+fr255.lang.ara = $(fr255.lang.ara);resources-fr255-ara
+fr255.lang.bul = $(fr255.lang.bul);resources-fr255-bul
+fr255.lang.ces = $(fr255.lang.ces);resources-fr255-ces
+fr255.lang.dan = $(fr255.lang.dan);resources-fr255-dan
+fr255.lang.deu = $(fr255.lang.deu);resources-fr255-deu
+fr255.lang.dut = $(fr255.lang.dut);resources-fr255-dut
+fr255.lang.eng = $(fr255.lang.eng);resources-fr255-eng
+fr255.lang.est = $(fr255.lang.est);resources-fr255-est
+fr255.lang.fin = $(fr255.lang.fin);resources-fr255-fin
+fr255.lang.fre = $(fr255.lang.fre);resources-fr255-fre
+fr255.lang.gre = $(fr255.lang.gre);resources-fr255-gre
+fr255.lang.heb = $(fr255.lang.heb);resources-fr255-heb
+fr255.lang.hrv = $(fr255.lang.hrv);resources-fr255-hrv
+fr255.lang.hun = $(fr255.lang.hun);resources-fr255-hun
+fr255.lang.ita = $(fr255.lang.ita);resources-fr255-ita
+fr255.lang.lav = $(fr255.lang.lav);resources-fr255-lav
+fr255.lang.lit = $(fr255.lang.lit);resources-fr255-lit
+fr255.lang.nob = $(fr255.lang.nob);resources-fr255-nob
+fr255.lang.pol = $(fr255.lang.pol);resources-fr255-pol
+fr255.lang.por = $(fr255.lang.por);resources-fr255-por
+fr255.lang.ron = $(fr255.lang.ron);resources-fr255-ron
+fr255.lang.rus = $(fr255.lang.rus);resources-fr255-rus
+fr255.lang.slo = $(fr255.lang.slo);resources-fr255-slo
+fr255.lang.slv = $(fr255.lang.slv);resources-fr255-slv
+fr255.lang.spa = $(fr255.lang.spa);resources-fr255-spa
+fr255.lang.swe = $(fr255.lang.swe);resources-fr255-swe
+fr255.lang.tur = $(fr255.lang.tur);resources-fr255-tur
+fr255.lang.ukr = $(fr255.lang.ukr);resources-fr255-ukr
+fr255.lang.ind = $(fr255.lang.ind);resources-fr255-ind
+fr255.lang.zsm = $(fr255.lang.zsm);resources-fr255-zsm
+fr255.lang.zhs = $(fr255.lang.zhs);resources-fr255-zhs
+fr255.lang.zht = $(fr255.lang.zht);resources-fr255-zht
+fr255.lang.jpn = $(fr255.lang.jpn);resources-fr255-jpn
+fr255.lang.kor = $(fr255.lang.kor);resources-fr255-kor
+fr255.lang.tha = $(fr255.lang.tha);resources-fr255-tha
+fr255.lang.vie = $(fr255.lang.vie);resources-fr255-vie
+
+
+# Set the fenix7xpro family qualifier
+fenix7xpro = $(round-280x280)
+fenix7xpro.resourcePath = $(fenix7xpro.resourcePath);resources-fenix7xpro
+fenix7xpro.personality = $(fenix7xpro.personality);$(devicesPath)\fenix7xpro;resources-fenix7xpro
+
+# Set the fenix7xpro language-specific string resources
+fenix7xpro.lang.ara = $(fenix7xpro.lang.ara);resources-fenix7xpro-ara
+fenix7xpro.lang.bul = $(fenix7xpro.lang.bul);resources-fenix7xpro-bul
+fenix7xpro.lang.ces = $(fenix7xpro.lang.ces);resources-fenix7xpro-ces
+fenix7xpro.lang.dan = $(fenix7xpro.lang.dan);resources-fenix7xpro-dan
+fenix7xpro.lang.deu = $(fenix7xpro.lang.deu);resources-fenix7xpro-deu
+fenix7xpro.lang.dut = $(fenix7xpro.lang.dut);resources-fenix7xpro-dut
+fenix7xpro.lang.eng = $(fenix7xpro.lang.eng);resources-fenix7xpro-eng
+fenix7xpro.lang.est = $(fenix7xpro.lang.est);resources-fenix7xpro-est
+fenix7xpro.lang.fin = $(fenix7xpro.lang.fin);resources-fenix7xpro-fin
+fenix7xpro.lang.fre = $(fenix7xpro.lang.fre);resources-fenix7xpro-fre
+fenix7xpro.lang.gre = $(fenix7xpro.lang.gre);resources-fenix7xpro-gre
+fenix7xpro.lang.heb = $(fenix7xpro.lang.heb);resources-fenix7xpro-heb
+fenix7xpro.lang.hrv = $(fenix7xpro.lang.hrv);resources-fenix7xpro-hrv
+fenix7xpro.lang.hun = $(fenix7xpro.lang.hun);resources-fenix7xpro-hun
+fenix7xpro.lang.ita = $(fenix7xpro.lang.ita);resources-fenix7xpro-ita
+fenix7xpro.lang.lav = $(fenix7xpro.lang.lav);resources-fenix7xpro-lav
+fenix7xpro.lang.lit = $(fenix7xpro.lang.lit);resources-fenix7xpro-lit
+fenix7xpro.lang.nob = $(fenix7xpro.lang.nob);resources-fenix7xpro-nob
+fenix7xpro.lang.pol = $(fenix7xpro.lang.pol);resources-fenix7xpro-pol
+fenix7xpro.lang.por = $(fenix7xpro.lang.por);resources-fenix7xpro-por
+fenix7xpro.lang.ron = $(fenix7xpro.lang.ron);resources-fenix7xpro-ron
+fenix7xpro.lang.rus = $(fenix7xpro.lang.rus);resources-fenix7xpro-rus
+fenix7xpro.lang.slo = $(fenix7xpro.lang.slo);resources-fenix7xpro-slo
+fenix7xpro.lang.slv = $(fenix7xpro.lang.slv);resources-fenix7xpro-slv
+fenix7xpro.lang.spa = $(fenix7xpro.lang.spa);resources-fenix7xpro-spa
+fenix7xpro.lang.swe = $(fenix7xpro.lang.swe);resources-fenix7xpro-swe
+fenix7xpro.lang.tur = $(fenix7xpro.lang.tur);resources-fenix7xpro-tur
+fenix7xpro.lang.ukr = $(fenix7xpro.lang.ukr);resources-fenix7xpro-ukr
+fenix7xpro.lang.ind = $(fenix7xpro.lang.ind);resources-fenix7xpro-ind
+fenix7xpro.lang.zsm = $(fenix7xpro.lang.zsm);resources-fenix7xpro-zsm
+fenix7xpro.lang.vie = $(fenix7xpro.lang.vie);resources-fenix7xpro-vie
+fenix7xpro.lang.zhs = $(fenix7xpro.lang.zhs);resources-fenix7xpro-zhs
+fenix7xpro.lang.zht = $(fenix7xpro.lang.zht);resources-fenix7xpro-zht
+fenix7xpro.lang.jpn = $(fenix7xpro.lang.jpn);resources-fenix7xpro-jpn
+fenix7xpro.lang.kor = $(fenix7xpro.lang.kor);resources-fenix7xpro-kor
+fenix7xpro.lang.tha = $(fenix7xpro.lang.tha);resources-fenix7xpro-tha
+
+
+# Set the epix2pro51mm family qualifier
+epix2pro51mm = $(round-454x454)
+epix2pro51mm.resourcePath = $(epix2pro51mm.resourcePath);resources-epix2pro51mm
+epix2pro51mm.personality = $(epix2pro51mm.personality);$(devicesPath)\epix2pro51mm;resources-epix2pro51mm
+
+# Set the epix2pro51mm language-specific string resources
+epix2pro51mm.lang.ara = $(epix2pro51mm.lang.ara);resources-epix2pro51mm-ara
+epix2pro51mm.lang.bul = $(epix2pro51mm.lang.bul);resources-epix2pro51mm-bul
+epix2pro51mm.lang.ces = $(epix2pro51mm.lang.ces);resources-epix2pro51mm-ces
+epix2pro51mm.lang.dan = $(epix2pro51mm.lang.dan);resources-epix2pro51mm-dan
+epix2pro51mm.lang.deu = $(epix2pro51mm.lang.deu);resources-epix2pro51mm-deu
+epix2pro51mm.lang.dut = $(epix2pro51mm.lang.dut);resources-epix2pro51mm-dut
+epix2pro51mm.lang.eng = $(epix2pro51mm.lang.eng);resources-epix2pro51mm-eng
+epix2pro51mm.lang.est = $(epix2pro51mm.lang.est);resources-epix2pro51mm-est
+epix2pro51mm.lang.fin = $(epix2pro51mm.lang.fin);resources-epix2pro51mm-fin
+epix2pro51mm.lang.fre = $(epix2pro51mm.lang.fre);resources-epix2pro51mm-fre
+epix2pro51mm.lang.gre = $(epix2pro51mm.lang.gre);resources-epix2pro51mm-gre
+epix2pro51mm.lang.heb = $(epix2pro51mm.lang.heb);resources-epix2pro51mm-heb
+epix2pro51mm.lang.hrv = $(epix2pro51mm.lang.hrv);resources-epix2pro51mm-hrv
+epix2pro51mm.lang.hun = $(epix2pro51mm.lang.hun);resources-epix2pro51mm-hun
+epix2pro51mm.lang.ita = $(epix2pro51mm.lang.ita);resources-epix2pro51mm-ita
+epix2pro51mm.lang.lav = $(epix2pro51mm.lang.lav);resources-epix2pro51mm-lav
+epix2pro51mm.lang.lit = $(epix2pro51mm.lang.lit);resources-epix2pro51mm-lit
+epix2pro51mm.lang.nob = $(epix2pro51mm.lang.nob);resources-epix2pro51mm-nob
+epix2pro51mm.lang.pol = $(epix2pro51mm.lang.pol);resources-epix2pro51mm-pol
+epix2pro51mm.lang.por = $(epix2pro51mm.lang.por);resources-epix2pro51mm-por
+epix2pro51mm.lang.ron = $(epix2pro51mm.lang.ron);resources-epix2pro51mm-ron
+epix2pro51mm.lang.rus = $(epix2pro51mm.lang.rus);resources-epix2pro51mm-rus
+epix2pro51mm.lang.slo = $(epix2pro51mm.lang.slo);resources-epix2pro51mm-slo
+epix2pro51mm.lang.slv = $(epix2pro51mm.lang.slv);resources-epix2pro51mm-slv
+epix2pro51mm.lang.spa = $(epix2pro51mm.lang.spa);resources-epix2pro51mm-spa
+epix2pro51mm.lang.swe = $(epix2pro51mm.lang.swe);resources-epix2pro51mm-swe
+epix2pro51mm.lang.tur = $(epix2pro51mm.lang.tur);resources-epix2pro51mm-tur
+epix2pro51mm.lang.ukr = $(epix2pro51mm.lang.ukr);resources-epix2pro51mm-ukr
+epix2pro51mm.lang.ind = $(epix2pro51mm.lang.ind);resources-epix2pro51mm-ind
+epix2pro51mm.lang.zsm = $(epix2pro51mm.lang.zsm);resources-epix2pro51mm-zsm
+epix2pro51mm.lang.vie = $(epix2pro51mm.lang.vie);resources-epix2pro51mm-vie
+epix2pro51mm.lang.zhs = $(epix2pro51mm.lang.zhs);resources-epix2pro51mm-zhs
+epix2pro51mm.lang.zht = $(epix2pro51mm.lang.zht);resources-epix2pro51mm-zht
+epix2pro51mm.lang.jpn = $(epix2pro51mm.lang.jpn);resources-epix2pro51mm-jpn
+epix2pro51mm.lang.kor = $(epix2pro51mm.lang.kor);resources-epix2pro51mm-kor
+epix2pro51mm.lang.tha = $(epix2pro51mm.lang.tha);resources-epix2pro51mm-tha
+
+
+# Set the epix2 family qualifier
+epix2 = $(round-416x416)
+epix2.resourcePath = $(epix2.resourcePath);resources-epix2
+epix2.personality = $(epix2.personality);$(devicesPath)\epix2;resources-epix2
+
+# Set the epix2 language-specific string resources
+epix2.lang.ara = $(epix2.lang.ara);resources-epix2-ara
+epix2.lang.bul = $(epix2.lang.bul);resources-epix2-bul
+epix2.lang.ces = $(epix2.lang.ces);resources-epix2-ces
+epix2.lang.dan = $(epix2.lang.dan);resources-epix2-dan
+epix2.lang.deu = $(epix2.lang.deu);resources-epix2-deu
+epix2.lang.dut = $(epix2.lang.dut);resources-epix2-dut
+epix2.lang.eng = $(epix2.lang.eng);resources-epix2-eng
+epix2.lang.est = $(epix2.lang.est);resources-epix2-est
+epix2.lang.fin = $(epix2.lang.fin);resources-epix2-fin
+epix2.lang.fre = $(epix2.lang.fre);resources-epix2-fre
+epix2.lang.gre = $(epix2.lang.gre);resources-epix2-gre
+epix2.lang.heb = $(epix2.lang.heb);resources-epix2-heb
+epix2.lang.hrv = $(epix2.lang.hrv);resources-epix2-hrv
+epix2.lang.hun = $(epix2.lang.hun);resources-epix2-hun
+epix2.lang.ita = $(epix2.lang.ita);resources-epix2-ita
+epix2.lang.lav = $(epix2.lang.lav);resources-epix2-lav
+epix2.lang.lit = $(epix2.lang.lit);resources-epix2-lit
+epix2.lang.nob = $(epix2.lang.nob);resources-epix2-nob
+epix2.lang.pol = $(epix2.lang.pol);resources-epix2-pol
+epix2.lang.por = $(epix2.lang.por);resources-epix2-por
+epix2.lang.ron = $(epix2.lang.ron);resources-epix2-ron
+epix2.lang.rus = $(epix2.lang.rus);resources-epix2-rus
+epix2.lang.slo = $(epix2.lang.slo);resources-epix2-slo
+epix2.lang.slv = $(epix2.lang.slv);resources-epix2-slv
+epix2.lang.spa = $(epix2.lang.spa);resources-epix2-spa
+epix2.lang.swe = $(epix2.lang.swe);resources-epix2-swe
+epix2.lang.tur = $(epix2.lang.tur);resources-epix2-tur
+epix2.lang.ukr = $(epix2.lang.ukr);resources-epix2-ukr
+epix2.lang.ind = $(epix2.lang.ind);resources-epix2-ind
+epix2.lang.zsm = $(epix2.lang.zsm);resources-epix2-zsm
+epix2.lang.zhs = $(epix2.lang.zhs);resources-epix2-zhs
+epix2.lang.zht = $(epix2.lang.zht);resources-epix2-zht
+epix2.lang.jpn = $(epix2.lang.jpn);resources-epix2-jpn
+epix2.lang.kor = $(epix2.lang.kor);resources-epix2-kor
+epix2.lang.tha = $(epix2.lang.tha);resources-epix2-tha
+epix2.lang.vie = $(epix2.lang.vie);resources-epix2-vie
+
+
+# Set the fr955 family qualifier
+fr955 = $(round-260x260)
+fr955.resourcePath = $(fr955.resourcePath);resources-fr955
+fr955.personality = $(fr955.personality);$(devicesPath)\fr955;resources-fr955
+
+# Set the fr955 language-specific string resources
+fr955.lang.ara = $(fr955.lang.ara);resources-fr955-ara
+fr955.lang.bul = $(fr955.lang.bul);resources-fr955-bul
+fr955.lang.ces = $(fr955.lang.ces);resources-fr955-ces
+fr955.lang.dan = $(fr955.lang.dan);resources-fr955-dan
+fr955.lang.deu = $(fr955.lang.deu);resources-fr955-deu
+fr955.lang.dut = $(fr955.lang.dut);resources-fr955-dut
+fr955.lang.eng = $(fr955.lang.eng);resources-fr955-eng
+fr955.lang.est = $(fr955.lang.est);resources-fr955-est
+fr955.lang.fin = $(fr955.lang.fin);resources-fr955-fin
+fr955.lang.fre = $(fr955.lang.fre);resources-fr955-fre
+fr955.lang.gre = $(fr955.lang.gre);resources-fr955-gre
+fr955.lang.heb = $(fr955.lang.heb);resources-fr955-heb
+fr955.lang.hrv = $(fr955.lang.hrv);resources-fr955-hrv
+fr955.lang.hun = $(fr955.lang.hun);resources-fr955-hun
+fr955.lang.ita = $(fr955.lang.ita);resources-fr955-ita
+fr955.lang.lav = $(fr955.lang.lav);resources-fr955-lav
+fr955.lang.lit = $(fr955.lang.lit);resources-fr955-lit
+fr955.lang.nob = $(fr955.lang.nob);resources-fr955-nob
+fr955.lang.pol = $(fr955.lang.pol);resources-fr955-pol
+fr955.lang.por = $(fr955.lang.por);resources-fr955-por
+fr955.lang.ron = $(fr955.lang.ron);resources-fr955-ron
+fr955.lang.rus = $(fr955.lang.rus);resources-fr955-rus
+fr955.lang.slo = $(fr955.lang.slo);resources-fr955-slo
+fr955.lang.slv = $(fr955.lang.slv);resources-fr955-slv
+fr955.lang.spa = $(fr955.lang.spa);resources-fr955-spa
+fr955.lang.swe = $(fr955.lang.swe);resources-fr955-swe
+fr955.lang.tur = $(fr955.lang.tur);resources-fr955-tur
+fr955.lang.ukr = $(fr955.lang.ukr);resources-fr955-ukr
+fr955.lang.ind = $(fr955.lang.ind);resources-fr955-ind
+fr955.lang.zsm = $(fr955.lang.zsm);resources-fr955-zsm
+fr955.lang.zhs = $(fr955.lang.zhs);resources-fr955-zhs
+fr955.lang.zht = $(fr955.lang.zht);resources-fr955-zht
+fr955.lang.jpn = $(fr955.lang.jpn);resources-fr955-jpn
+fr955.lang.kor = $(fr955.lang.kor);resources-fr955-kor
+fr955.lang.tha = $(fr955.lang.tha);resources-fr955-tha
+fr955.lang.vie = $(fr955.lang.vie);resources-fr955-vie
+
+
+# Set the fr165m family qualifier
+fr165m = $(round-390x390)
+fr165m.resourcePath = $(fr165m.resourcePath);resources-fr165m
+fr165m.personality = $(fr165m.personality);$(devicesPath)\fr165m;resources-fr165m
+
+# Set the fr165m language-specific string resources
+fr165m.lang.ara = $(fr165m.lang.ara);resources-fr165m-ara
+fr165m.lang.bul = $(fr165m.lang.bul);resources-fr165m-bul
+fr165m.lang.ces = $(fr165m.lang.ces);resources-fr165m-ces
+fr165m.lang.dan = $(fr165m.lang.dan);resources-fr165m-dan
+fr165m.lang.deu = $(fr165m.lang.deu);resources-fr165m-deu
+fr165m.lang.dut = $(fr165m.lang.dut);resources-fr165m-dut
+fr165m.lang.eng = $(fr165m.lang.eng);resources-fr165m-eng
+fr165m.lang.est = $(fr165m.lang.est);resources-fr165m-est
+fr165m.lang.fin = $(fr165m.lang.fin);resources-fr165m-fin
+fr165m.lang.fre = $(fr165m.lang.fre);resources-fr165m-fre
+fr165m.lang.gre = $(fr165m.lang.gre);resources-fr165m-gre
+fr165m.lang.heb = $(fr165m.lang.heb);resources-fr165m-heb
+fr165m.lang.hrv = $(fr165m.lang.hrv);resources-fr165m-hrv
+fr165m.lang.hun = $(fr165m.lang.hun);resources-fr165m-hun
+fr165m.lang.ita = $(fr165m.lang.ita);resources-fr165m-ita
+fr165m.lang.lav = $(fr165m.lang.lav);resources-fr165m-lav
+fr165m.lang.lit = $(fr165m.lang.lit);resources-fr165m-lit
+fr165m.lang.nob = $(fr165m.lang.nob);resources-fr165m-nob
+fr165m.lang.pol = $(fr165m.lang.pol);resources-fr165m-pol
+fr165m.lang.por = $(fr165m.lang.por);resources-fr165m-por
+fr165m.lang.ron = $(fr165m.lang.ron);resources-fr165m-ron
+fr165m.lang.rus = $(fr165m.lang.rus);resources-fr165m-rus
+fr165m.lang.slo = $(fr165m.lang.slo);resources-fr165m-slo
+fr165m.lang.slv = $(fr165m.lang.slv);resources-fr165m-slv
+fr165m.lang.spa = $(fr165m.lang.spa);resources-fr165m-spa
+fr165m.lang.swe = $(fr165m.lang.swe);resources-fr165m-swe
+fr165m.lang.tur = $(fr165m.lang.tur);resources-fr165m-tur
+fr165m.lang.ukr = $(fr165m.lang.ukr);resources-fr165m-ukr
+fr165m.lang.ind = $(fr165m.lang.ind);resources-fr165m-ind
+fr165m.lang.zsm = $(fr165m.lang.zsm);resources-fr165m-zsm
+fr165m.lang.vie = $(fr165m.lang.vie);resources-fr165m-vie
+fr165m.lang.zhs = $(fr165m.lang.zhs);resources-fr165m-zhs
+fr165m.lang.zht = $(fr165m.lang.zht);resources-fr165m-zht
+fr165m.lang.jpn = $(fr165m.lang.jpn);resources-fr165m-jpn
+fr165m.lang.kor = $(fr165m.lang.kor);resources-fr165m-kor
+fr165m.lang.tha = $(fr165m.lang.tha);resources-fr165m-tha
+
+
+# Set the d2mach2 family qualifier
+d2mach2 = $(round-454x454)
+d2mach2.resourcePath = $(d2mach2.resourcePath);resources-d2mach2
+d2mach2.personality = $(d2mach2.personality);$(devicesPath)\d2mach2;resources-d2mach2
+
+# Set the d2mach2 language-specific string resources
+d2mach2.lang.ara = $(d2mach2.lang.ara);resources-d2mach2-ara
+d2mach2.lang.bul = $(d2mach2.lang.bul);resources-d2mach2-bul
+d2mach2.lang.ces = $(d2mach2.lang.ces);resources-d2mach2-ces
+d2mach2.lang.dan = $(d2mach2.lang.dan);resources-d2mach2-dan
+d2mach2.lang.deu = $(d2mach2.lang.deu);resources-d2mach2-deu
+d2mach2.lang.dut = $(d2mach2.lang.dut);resources-d2mach2-dut
+d2mach2.lang.eng = $(d2mach2.lang.eng);resources-d2mach2-eng
+d2mach2.lang.est = $(d2mach2.lang.est);resources-d2mach2-est
+d2mach2.lang.fin = $(d2mach2.lang.fin);resources-d2mach2-fin
+d2mach2.lang.fre = $(d2mach2.lang.fre);resources-d2mach2-fre
+d2mach2.lang.gre = $(d2mach2.lang.gre);resources-d2mach2-gre
+d2mach2.lang.heb = $(d2mach2.lang.heb);resources-d2mach2-heb
+d2mach2.lang.hrv = $(d2mach2.lang.hrv);resources-d2mach2-hrv
+d2mach2.lang.hun = $(d2mach2.lang.hun);resources-d2mach2-hun
+d2mach2.lang.ita = $(d2mach2.lang.ita);resources-d2mach2-ita
+d2mach2.lang.lav = $(d2mach2.lang.lav);resources-d2mach2-lav
+d2mach2.lang.lit = $(d2mach2.lang.lit);resources-d2mach2-lit
+d2mach2.lang.nob = $(d2mach2.lang.nob);resources-d2mach2-nob
+d2mach2.lang.pol = $(d2mach2.lang.pol);resources-d2mach2-pol
+d2mach2.lang.por = $(d2mach2.lang.por);resources-d2mach2-por
+d2mach2.lang.ron = $(d2mach2.lang.ron);resources-d2mach2-ron
+d2mach2.lang.rus = $(d2mach2.lang.rus);resources-d2mach2-rus
+d2mach2.lang.slo = $(d2mach2.lang.slo);resources-d2mach2-slo
+d2mach2.lang.slv = $(d2mach2.lang.slv);resources-d2mach2-slv
+d2mach2.lang.spa = $(d2mach2.lang.spa);resources-d2mach2-spa
+d2mach2.lang.swe = $(d2mach2.lang.swe);resources-d2mach2-swe
+d2mach2.lang.tur = $(d2mach2.lang.tur);resources-d2mach2-tur
+d2mach2.lang.ukr = $(d2mach2.lang.ukr);resources-d2mach2-ukr
+d2mach2.lang.ind = $(d2mach2.lang.ind);resources-d2mach2-ind
+d2mach2.lang.zsm = $(d2mach2.lang.zsm);resources-d2mach2-zsm
+d2mach2.lang.vie = $(d2mach2.lang.vie);resources-d2mach2-vie
+d2mach2.lang.zhs = $(d2mach2.lang.zhs);resources-d2mach2-zhs
+d2mach2.lang.zht = $(d2mach2.lang.zht);resources-d2mach2-zht
+d2mach2.lang.jpn = $(d2mach2.lang.jpn);resources-d2mach2-jpn
+d2mach2.lang.kor = $(d2mach2.lang.kor);resources-d2mach2-kor
+d2mach2.lang.tha = $(d2mach2.lang.tha);resources-d2mach2-tha
+
+
+# Set the fenix7xpronowifi family qualifier
+fenix7xpronowifi = $(round-280x280)
+fenix7xpronowifi.resourcePath = $(fenix7xpronowifi.resourcePath);resources-fenix7xpronowifi
+fenix7xpronowifi.personality = $(fenix7xpronowifi.personality);$(devicesPath)\fenix7xpronowifi;resources-fenix7xpronowifi
+
+# Set the fenix7xpronowifi language-specific string resources
+fenix7xpronowifi.lang.ara = $(fenix7xpronowifi.lang.ara);resources-fenix7xpronowifi-ara
+fenix7xpronowifi.lang.bul = $(fenix7xpronowifi.lang.bul);resources-fenix7xpronowifi-bul
+fenix7xpronowifi.lang.ces = $(fenix7xpronowifi.lang.ces);resources-fenix7xpronowifi-ces
+fenix7xpronowifi.lang.dan = $(fenix7xpronowifi.lang.dan);resources-fenix7xpronowifi-dan
+fenix7xpronowifi.lang.deu = $(fenix7xpronowifi.lang.deu);resources-fenix7xpronowifi-deu
+fenix7xpronowifi.lang.dut = $(fenix7xpronowifi.lang.dut);resources-fenix7xpronowifi-dut
+fenix7xpronowifi.lang.eng = $(fenix7xpronowifi.lang.eng);resources-fenix7xpronowifi-eng
+fenix7xpronowifi.lang.est = $(fenix7xpronowifi.lang.est);resources-fenix7xpronowifi-est
+fenix7xpronowifi.lang.fin = $(fenix7xpronowifi.lang.fin);resources-fenix7xpronowifi-fin
+fenix7xpronowifi.lang.fre = $(fenix7xpronowifi.lang.fre);resources-fenix7xpronowifi-fre
+fenix7xpronowifi.lang.gre = $(fenix7xpronowifi.lang.gre);resources-fenix7xpronowifi-gre
+fenix7xpronowifi.lang.heb = $(fenix7xpronowifi.lang.heb);resources-fenix7xpronowifi-heb
+fenix7xpronowifi.lang.hrv = $(fenix7xpronowifi.lang.hrv);resources-fenix7xpronowifi-hrv
+fenix7xpronowifi.lang.hun = $(fenix7xpronowifi.lang.hun);resources-fenix7xpronowifi-hun
+fenix7xpronowifi.lang.ita = $(fenix7xpronowifi.lang.ita);resources-fenix7xpronowifi-ita
+fenix7xpronowifi.lang.lav = $(fenix7xpronowifi.lang.lav);resources-fenix7xpronowifi-lav
+fenix7xpronowifi.lang.lit = $(fenix7xpronowifi.lang.lit);resources-fenix7xpronowifi-lit
+fenix7xpronowifi.lang.nob = $(fenix7xpronowifi.lang.nob);resources-fenix7xpronowifi-nob
+fenix7xpronowifi.lang.pol = $(fenix7xpronowifi.lang.pol);resources-fenix7xpronowifi-pol
+fenix7xpronowifi.lang.por = $(fenix7xpronowifi.lang.por);resources-fenix7xpronowifi-por
+fenix7xpronowifi.lang.ron = $(fenix7xpronowifi.lang.ron);resources-fenix7xpronowifi-ron
+fenix7xpronowifi.lang.rus = $(fenix7xpronowifi.lang.rus);resources-fenix7xpronowifi-rus
+fenix7xpronowifi.lang.slo = $(fenix7xpronowifi.lang.slo);resources-fenix7xpronowifi-slo
+fenix7xpronowifi.lang.slv = $(fenix7xpronowifi.lang.slv);resources-fenix7xpronowifi-slv
+fenix7xpronowifi.lang.spa = $(fenix7xpronowifi.lang.spa);resources-fenix7xpronowifi-spa
+fenix7xpronowifi.lang.swe = $(fenix7xpronowifi.lang.swe);resources-fenix7xpronowifi-swe
+fenix7xpronowifi.lang.tur = $(fenix7xpronowifi.lang.tur);resources-fenix7xpronowifi-tur
+fenix7xpronowifi.lang.ukr = $(fenix7xpronowifi.lang.ukr);resources-fenix7xpronowifi-ukr
+fenix7xpronowifi.lang.ind = $(fenix7xpronowifi.lang.ind);resources-fenix7xpronowifi-ind
+fenix7xpronowifi.lang.zsm = $(fenix7xpronowifi.lang.zsm);resources-fenix7xpronowifi-zsm
+fenix7xpronowifi.lang.vie = $(fenix7xpronowifi.lang.vie);resources-fenix7xpronowifi-vie
+fenix7xpronowifi.lang.zhs = $(fenix7xpronowifi.lang.zhs);resources-fenix7xpronowifi-zhs
+fenix7xpronowifi.lang.zht = $(fenix7xpronowifi.lang.zht);resources-fenix7xpronowifi-zht
+fenix7xpronowifi.lang.jpn = $(fenix7xpronowifi.lang.jpn);resources-fenix7xpronowifi-jpn
+fenix7xpronowifi.lang.kor = $(fenix7xpronowifi.lang.kor);resources-fenix7xpronowifi-kor
+fenix7xpronowifi.lang.tha = $(fenix7xpronowifi.lang.tha);resources-fenix7xpronowifi-tha
+
+
+# Set the d2mach1 family qualifier
+d2mach1 = $(round-416x416)
+d2mach1.resourcePath = $(d2mach1.resourcePath);resources-d2mach1
+d2mach1.personality = $(d2mach1.personality);$(devicesPath)\d2mach1;resources-d2mach1
+
+# Set the d2mach1 language-specific string resources
+d2mach1.lang.ara = $(d2mach1.lang.ara);resources-d2mach1-ara
+d2mach1.lang.bul = $(d2mach1.lang.bul);resources-d2mach1-bul
+d2mach1.lang.ces = $(d2mach1.lang.ces);resources-d2mach1-ces
+d2mach1.lang.dan = $(d2mach1.lang.dan);resources-d2mach1-dan
+d2mach1.lang.deu = $(d2mach1.lang.deu);resources-d2mach1-deu
+d2mach1.lang.dut = $(d2mach1.lang.dut);resources-d2mach1-dut
+d2mach1.lang.eng = $(d2mach1.lang.eng);resources-d2mach1-eng
+d2mach1.lang.est = $(d2mach1.lang.est);resources-d2mach1-est
+d2mach1.lang.fin = $(d2mach1.lang.fin);resources-d2mach1-fin
+d2mach1.lang.fre = $(d2mach1.lang.fre);resources-d2mach1-fre
+d2mach1.lang.gre = $(d2mach1.lang.gre);resources-d2mach1-gre
+d2mach1.lang.heb = $(d2mach1.lang.heb);resources-d2mach1-heb
+d2mach1.lang.hrv = $(d2mach1.lang.hrv);resources-d2mach1-hrv
+d2mach1.lang.hun = $(d2mach1.lang.hun);resources-d2mach1-hun
+d2mach1.lang.ita = $(d2mach1.lang.ita);resources-d2mach1-ita
+d2mach1.lang.lav = $(d2mach1.lang.lav);resources-d2mach1-lav
+d2mach1.lang.lit = $(d2mach1.lang.lit);resources-d2mach1-lit
+d2mach1.lang.nob = $(d2mach1.lang.nob);resources-d2mach1-nob
+d2mach1.lang.pol = $(d2mach1.lang.pol);resources-d2mach1-pol
+d2mach1.lang.por = $(d2mach1.lang.por);resources-d2mach1-por
+d2mach1.lang.ron = $(d2mach1.lang.ron);resources-d2mach1-ron
+d2mach1.lang.rus = $(d2mach1.lang.rus);resources-d2mach1-rus
+d2mach1.lang.slo = $(d2mach1.lang.slo);resources-d2mach1-slo
+d2mach1.lang.slv = $(d2mach1.lang.slv);resources-d2mach1-slv
+d2mach1.lang.spa = $(d2mach1.lang.spa);resources-d2mach1-spa
+d2mach1.lang.swe = $(d2mach1.lang.swe);resources-d2mach1-swe
+d2mach1.lang.tur = $(d2mach1.lang.tur);resources-d2mach1-tur
+d2mach1.lang.ukr = $(d2mach1.lang.ukr);resources-d2mach1-ukr
+d2mach1.lang.ind = $(d2mach1.lang.ind);resources-d2mach1-ind
+d2mach1.lang.zsm = $(d2mach1.lang.zsm);resources-d2mach1-zsm
+d2mach1.lang.zhs = $(d2mach1.lang.zhs);resources-d2mach1-zhs
+d2mach1.lang.zht = $(d2mach1.lang.zht);resources-d2mach1-zht
+d2mach1.lang.jpn = $(d2mach1.lang.jpn);resources-d2mach1-jpn
+d2mach1.lang.kor = $(d2mach1.lang.kor);resources-d2mach1-kor
+d2mach1.lang.tha = $(d2mach1.lang.tha);resources-d2mach1-tha
+d2mach1.lang.vie = $(d2mach1.lang.vie);resources-d2mach1-vie
+
+
+# Set the fenix7spro family qualifier
+fenix7spro = $(round-240x240)
+fenix7spro.resourcePath = $(fenix7spro.resourcePath);resources-fenix7spro
+fenix7spro.personality = $(fenix7spro.personality);$(devicesPath)\fenix7spro;resources-fenix7spro
+
+# Set the fenix7spro language-specific string resources
+fenix7spro.lang.ara = $(fenix7spro.lang.ara);resources-fenix7spro-ara
+fenix7spro.lang.bul = $(fenix7spro.lang.bul);resources-fenix7spro-bul
+fenix7spro.lang.ces = $(fenix7spro.lang.ces);resources-fenix7spro-ces
+fenix7spro.lang.dan = $(fenix7spro.lang.dan);resources-fenix7spro-dan
+fenix7spro.lang.deu = $(fenix7spro.lang.deu);resources-fenix7spro-deu
+fenix7spro.lang.dut = $(fenix7spro.lang.dut);resources-fenix7spro-dut
+fenix7spro.lang.eng = $(fenix7spro.lang.eng);resources-fenix7spro-eng
+fenix7spro.lang.est = $(fenix7spro.lang.est);resources-fenix7spro-est
+fenix7spro.lang.fin = $(fenix7spro.lang.fin);resources-fenix7spro-fin
+fenix7spro.lang.fre = $(fenix7spro.lang.fre);resources-fenix7spro-fre
+fenix7spro.lang.gre = $(fenix7spro.lang.gre);resources-fenix7spro-gre
+fenix7spro.lang.heb = $(fenix7spro.lang.heb);resources-fenix7spro-heb
+fenix7spro.lang.hrv = $(fenix7spro.lang.hrv);resources-fenix7spro-hrv
+fenix7spro.lang.hun = $(fenix7spro.lang.hun);resources-fenix7spro-hun
+fenix7spro.lang.ita = $(fenix7spro.lang.ita);resources-fenix7spro-ita
+fenix7spro.lang.lav = $(fenix7spro.lang.lav);resources-fenix7spro-lav
+fenix7spro.lang.lit = $(fenix7spro.lang.lit);resources-fenix7spro-lit
+fenix7spro.lang.nob = $(fenix7spro.lang.nob);resources-fenix7spro-nob
+fenix7spro.lang.pol = $(fenix7spro.lang.pol);resources-fenix7spro-pol
+fenix7spro.lang.por = $(fenix7spro.lang.por);resources-fenix7spro-por
+fenix7spro.lang.ron = $(fenix7spro.lang.ron);resources-fenix7spro-ron
+fenix7spro.lang.rus = $(fenix7spro.lang.rus);resources-fenix7spro-rus
+fenix7spro.lang.slo = $(fenix7spro.lang.slo);resources-fenix7spro-slo
+fenix7spro.lang.slv = $(fenix7spro.lang.slv);resources-fenix7spro-slv
+fenix7spro.lang.spa = $(fenix7spro.lang.spa);resources-fenix7spro-spa
+fenix7spro.lang.swe = $(fenix7spro.lang.swe);resources-fenix7spro-swe
+fenix7spro.lang.tur = $(fenix7spro.lang.tur);resources-fenix7spro-tur
+fenix7spro.lang.ukr = $(fenix7spro.lang.ukr);resources-fenix7spro-ukr
+fenix7spro.lang.ind = $(fenix7spro.lang.ind);resources-fenix7spro-ind
+fenix7spro.lang.zsm = $(fenix7spro.lang.zsm);resources-fenix7spro-zsm
+fenix7spro.lang.vie = $(fenix7spro.lang.vie);resources-fenix7spro-vie
+fenix7spro.lang.zhs = $(fenix7spro.lang.zhs);resources-fenix7spro-zhs
+fenix7spro.lang.zht = $(fenix7spro.lang.zht);resources-fenix7spro-zht
+fenix7spro.lang.jpn = $(fenix7spro.lang.jpn);resources-fenix7spro-jpn
+fenix7spro.lang.kor = $(fenix7spro.lang.kor);resources-fenix7spro-kor
+fenix7spro.lang.tha = $(fenix7spro.lang.tha);resources-fenix7spro-tha
+
+
+# Set the fenix7 family qualifier
+fenix7 = $(round-260x260)
+fenix7.resourcePath = $(fenix7.resourcePath);resources-fenix7
+fenix7.personality = $(fenix7.personality);$(devicesPath)\fenix7;resources-fenix7
+
+# Set the fenix7 language-specific string resources
+fenix7.lang.ara = $(fenix7.lang.ara);resources-fenix7-ara
+fenix7.lang.bul = $(fenix7.lang.bul);resources-fenix7-bul
+fenix7.lang.ces = $(fenix7.lang.ces);resources-fenix7-ces
+fenix7.lang.dan = $(fenix7.lang.dan);resources-fenix7-dan
+fenix7.lang.deu = $(fenix7.lang.deu);resources-fenix7-deu
+fenix7.lang.dut = $(fenix7.lang.dut);resources-fenix7-dut
+fenix7.lang.eng = $(fenix7.lang.eng);resources-fenix7-eng
+fenix7.lang.est = $(fenix7.lang.est);resources-fenix7-est
+fenix7.lang.fin = $(fenix7.lang.fin);resources-fenix7-fin
+fenix7.lang.fre = $(fenix7.lang.fre);resources-fenix7-fre
+fenix7.lang.gre = $(fenix7.lang.gre);resources-fenix7-gre
+fenix7.lang.heb = $(fenix7.lang.heb);resources-fenix7-heb
+fenix7.lang.hrv = $(fenix7.lang.hrv);resources-fenix7-hrv
+fenix7.lang.hun = $(fenix7.lang.hun);resources-fenix7-hun
+fenix7.lang.ita = $(fenix7.lang.ita);resources-fenix7-ita
+fenix7.lang.lav = $(fenix7.lang.lav);resources-fenix7-lav
+fenix7.lang.lit = $(fenix7.lang.lit);resources-fenix7-lit
+fenix7.lang.nob = $(fenix7.lang.nob);resources-fenix7-nob
+fenix7.lang.pol = $(fenix7.lang.pol);resources-fenix7-pol
+fenix7.lang.por = $(fenix7.lang.por);resources-fenix7-por
+fenix7.lang.ron = $(fenix7.lang.ron);resources-fenix7-ron
+fenix7.lang.rus = $(fenix7.lang.rus);resources-fenix7-rus
+fenix7.lang.slo = $(fenix7.lang.slo);resources-fenix7-slo
+fenix7.lang.slv = $(fenix7.lang.slv);resources-fenix7-slv
+fenix7.lang.spa = $(fenix7.lang.spa);resources-fenix7-spa
+fenix7.lang.swe = $(fenix7.lang.swe);resources-fenix7-swe
+fenix7.lang.tur = $(fenix7.lang.tur);resources-fenix7-tur
+fenix7.lang.ukr = $(fenix7.lang.ukr);resources-fenix7-ukr
+fenix7.lang.ind = $(fenix7.lang.ind);resources-fenix7-ind
+fenix7.lang.zsm = $(fenix7.lang.zsm);resources-fenix7-zsm
+fenix7.lang.vie = $(fenix7.lang.vie);resources-fenix7-vie
+fenix7.lang.zhs = $(fenix7.lang.zhs);resources-fenix7-zhs
+fenix7.lang.zht = $(fenix7.lang.zht);resources-fenix7-zht
+fenix7.lang.jpn = $(fenix7.lang.jpn);resources-fenix7-jpn
+fenix7.lang.kor = $(fenix7.lang.kor);resources-fenix7-kor
+fenix7.lang.tha = $(fenix7.lang.tha);resources-fenix7-tha
+
+
+# Set the epix2pro47mm family qualifier
+epix2pro47mm = $(round-416x416)
+epix2pro47mm.resourcePath = $(epix2pro47mm.resourcePath);resources-epix2pro47mm
+epix2pro47mm.personality = $(epix2pro47mm.personality);$(devicesPath)\epix2pro47mm;resources-epix2pro47mm
+
+# Set the epix2pro47mm language-specific string resources
+epix2pro47mm.lang.ara = $(epix2pro47mm.lang.ara);resources-epix2pro47mm-ara
+epix2pro47mm.lang.bul = $(epix2pro47mm.lang.bul);resources-epix2pro47mm-bul
+epix2pro47mm.lang.ces = $(epix2pro47mm.lang.ces);resources-epix2pro47mm-ces
+epix2pro47mm.lang.dan = $(epix2pro47mm.lang.dan);resources-epix2pro47mm-dan
+epix2pro47mm.lang.deu = $(epix2pro47mm.lang.deu);resources-epix2pro47mm-deu
+epix2pro47mm.lang.dut = $(epix2pro47mm.lang.dut);resources-epix2pro47mm-dut
+epix2pro47mm.lang.eng = $(epix2pro47mm.lang.eng);resources-epix2pro47mm-eng
+epix2pro47mm.lang.est = $(epix2pro47mm.lang.est);resources-epix2pro47mm-est
+epix2pro47mm.lang.fin = $(epix2pro47mm.lang.fin);resources-epix2pro47mm-fin
+epix2pro47mm.lang.fre = $(epix2pro47mm.lang.fre);resources-epix2pro47mm-fre
+epix2pro47mm.lang.gre = $(epix2pro47mm.lang.gre);resources-epix2pro47mm-gre
+epix2pro47mm.lang.heb = $(epix2pro47mm.lang.heb);resources-epix2pro47mm-heb
+epix2pro47mm.lang.hrv = $(epix2pro47mm.lang.hrv);resources-epix2pro47mm-hrv
+epix2pro47mm.lang.hun = $(epix2pro47mm.lang.hun);resources-epix2pro47mm-hun
+epix2pro47mm.lang.ita = $(epix2pro47mm.lang.ita);resources-epix2pro47mm-ita
+epix2pro47mm.lang.lav = $(epix2pro47mm.lang.lav);resources-epix2pro47mm-lav
+epix2pro47mm.lang.lit = $(epix2pro47mm.lang.lit);resources-epix2pro47mm-lit
+epix2pro47mm.lang.nob = $(epix2pro47mm.lang.nob);resources-epix2pro47mm-nob
+epix2pro47mm.lang.pol = $(epix2pro47mm.lang.pol);resources-epix2pro47mm-pol
+epix2pro47mm.lang.por = $(epix2pro47mm.lang.por);resources-epix2pro47mm-por
+epix2pro47mm.lang.ron = $(epix2pro47mm.lang.ron);resources-epix2pro47mm-ron
+epix2pro47mm.lang.rus = $(epix2pro47mm.lang.rus);resources-epix2pro47mm-rus
+epix2pro47mm.lang.slo = $(epix2pro47mm.lang.slo);resources-epix2pro47mm-slo
+epix2pro47mm.lang.slv = $(epix2pro47mm.lang.slv);resources-epix2pro47mm-slv
+epix2pro47mm.lang.spa = $(epix2pro47mm.lang.spa);resources-epix2pro47mm-spa
+epix2pro47mm.lang.swe = $(epix2pro47mm.lang.swe);resources-epix2pro47mm-swe
+epix2pro47mm.lang.tur = $(epix2pro47mm.lang.tur);resources-epix2pro47mm-tur
+epix2pro47mm.lang.ukr = $(epix2pro47mm.lang.ukr);resources-epix2pro47mm-ukr
+epix2pro47mm.lang.ind = $(epix2pro47mm.lang.ind);resources-epix2pro47mm-ind
+epix2pro47mm.lang.zsm = $(epix2pro47mm.lang.zsm);resources-epix2pro47mm-zsm
+epix2pro47mm.lang.zhs = $(epix2pro47mm.lang.zhs);resources-epix2pro47mm-zhs
+epix2pro47mm.lang.zht = $(epix2pro47mm.lang.zht);resources-epix2pro47mm-zht
+epix2pro47mm.lang.jpn = $(epix2pro47mm.lang.jpn);resources-epix2pro47mm-jpn
+epix2pro47mm.lang.kor = $(epix2pro47mm.lang.kor);resources-epix2pro47mm-kor
+epix2pro47mm.lang.tha = $(epix2pro47mm.lang.tha);resources-epix2pro47mm-tha
+epix2pro47mm.lang.vie = $(epix2pro47mm.lang.vie);resources-epix2pro47mm-vie
+
+
+# Set the vivoactive5 family qualifier
+vivoactive5 = $(round-390x390)
+vivoactive5.resourcePath = $(vivoactive5.resourcePath);resources-vivoactive5
+vivoactive5.personality = $(vivoactive5.personality);$(devicesPath)\vivoactive5;resources-vivoactive5
+
+# Set the vivoactive5 language-specific string resources
+vivoactive5.lang.ara = $(vivoactive5.lang.ara);resources-vivoactive5-ara
+vivoactive5.lang.bul = $(vivoactive5.lang.bul);resources-vivoactive5-bul
+vivoactive5.lang.ces = $(vivoactive5.lang.ces);resources-vivoactive5-ces
+vivoactive5.lang.dan = $(vivoactive5.lang.dan);resources-vivoactive5-dan
+vivoactive5.lang.deu = $(vivoactive5.lang.deu);resources-vivoactive5-deu
+vivoactive5.lang.dut = $(vivoactive5.lang.dut);resources-vivoactive5-dut
+vivoactive5.lang.eng = $(vivoactive5.lang.eng);resources-vivoactive5-eng
+vivoactive5.lang.est = $(vivoactive5.lang.est);resources-vivoactive5-est
+vivoactive5.lang.fin = $(vivoactive5.lang.fin);resources-vivoactive5-fin
+vivoactive5.lang.fre = $(vivoactive5.lang.fre);resources-vivoactive5-fre
+vivoactive5.lang.gre = $(vivoactive5.lang.gre);resources-vivoactive5-gre
+vivoactive5.lang.heb = $(vivoactive5.lang.heb);resources-vivoactive5-heb
+vivoactive5.lang.hrv = $(vivoactive5.lang.hrv);resources-vivoactive5-hrv
+vivoactive5.lang.hun = $(vivoactive5.lang.hun);resources-vivoactive5-hun
+vivoactive5.lang.ita = $(vivoactive5.lang.ita);resources-vivoactive5-ita
+vivoactive5.lang.lav = $(vivoactive5.lang.lav);resources-vivoactive5-lav
+vivoactive5.lang.lit = $(vivoactive5.lang.lit);resources-vivoactive5-lit
+vivoactive5.lang.nob = $(vivoactive5.lang.nob);resources-vivoactive5-nob
+vivoactive5.lang.pol = $(vivoactive5.lang.pol);resources-vivoactive5-pol
+vivoactive5.lang.por = $(vivoactive5.lang.por);resources-vivoactive5-por
+vivoactive5.lang.ron = $(vivoactive5.lang.ron);resources-vivoactive5-ron
+vivoactive5.lang.rus = $(vivoactive5.lang.rus);resources-vivoactive5-rus
+vivoactive5.lang.slo = $(vivoactive5.lang.slo);resources-vivoactive5-slo
+vivoactive5.lang.slv = $(vivoactive5.lang.slv);resources-vivoactive5-slv
+vivoactive5.lang.spa = $(vivoactive5.lang.spa);resources-vivoactive5-spa
+vivoactive5.lang.swe = $(vivoactive5.lang.swe);resources-vivoactive5-swe
+vivoactive5.lang.tur = $(vivoactive5.lang.tur);resources-vivoactive5-tur
+vivoactive5.lang.ukr = $(vivoactive5.lang.ukr);resources-vivoactive5-ukr
+vivoactive5.lang.ind = $(vivoactive5.lang.ind);resources-vivoactive5-ind
+vivoactive5.lang.zsm = $(vivoactive5.lang.zsm);resources-vivoactive5-zsm
+vivoactive5.lang.vie = $(vivoactive5.lang.vie);resources-vivoactive5-vie
+vivoactive5.lang.zhs = $(vivoactive5.lang.zhs);resources-vivoactive5-zhs
+vivoactive5.lang.zht = $(vivoactive5.lang.zht);resources-vivoactive5-zht
+vivoactive5.lang.jpn = $(vivoactive5.lang.jpn);resources-vivoactive5-jpn
+vivoactive5.lang.kor = $(vivoactive5.lang.kor);resources-vivoactive5-kor
+vivoactive5.lang.tha = $(vivoactive5.lang.tha);resources-vivoactive5-tha
+
+
+# Set the fr265 family qualifier
+fr265 = $(round-416x416)
+fr265.resourcePath = $(fr265.resourcePath);resources-fr265
+fr265.personality = $(fr265.personality);$(devicesPath)\fr265;resources-fr265
+
+# Set the fr265 language-specific string resources
+fr265.lang.ara = $(fr265.lang.ara);resources-fr265-ara
+fr265.lang.bul = $(fr265.lang.bul);resources-fr265-bul
+fr265.lang.ces = $(fr265.lang.ces);resources-fr265-ces
+fr265.lang.dan = $(fr265.lang.dan);resources-fr265-dan
+fr265.lang.deu = $(fr265.lang.deu);resources-fr265-deu
+fr265.lang.dut = $(fr265.lang.dut);resources-fr265-dut
+fr265.lang.eng = $(fr265.lang.eng);resources-fr265-eng
+fr265.lang.est = $(fr265.lang.est);resources-fr265-est
+fr265.lang.fin = $(fr265.lang.fin);resources-fr265-fin
+fr265.lang.fre = $(fr265.lang.fre);resources-fr265-fre
+fr265.lang.gre = $(fr265.lang.gre);resources-fr265-gre
+fr265.lang.heb = $(fr265.lang.heb);resources-fr265-heb
+fr265.lang.hrv = $(fr265.lang.hrv);resources-fr265-hrv
+fr265.lang.hun = $(fr265.lang.hun);resources-fr265-hun
+fr265.lang.ita = $(fr265.lang.ita);resources-fr265-ita
+fr265.lang.lav = $(fr265.lang.lav);resources-fr265-lav
+fr265.lang.lit = $(fr265.lang.lit);resources-fr265-lit
+fr265.lang.nob = $(fr265.lang.nob);resources-fr265-nob
+fr265.lang.pol = $(fr265.lang.pol);resources-fr265-pol
+fr265.lang.por = $(fr265.lang.por);resources-fr265-por
+fr265.lang.ron = $(fr265.lang.ron);resources-fr265-ron
+fr265.lang.rus = $(fr265.lang.rus);resources-fr265-rus
+fr265.lang.slo = $(fr265.lang.slo);resources-fr265-slo
+fr265.lang.slv = $(fr265.lang.slv);resources-fr265-slv
+fr265.lang.spa = $(fr265.lang.spa);resources-fr265-spa
+fr265.lang.swe = $(fr265.lang.swe);resources-fr265-swe
+fr265.lang.tur = $(fr265.lang.tur);resources-fr265-tur
+fr265.lang.ukr = $(fr265.lang.ukr);resources-fr265-ukr
+fr265.lang.ind = $(fr265.lang.ind);resources-fr265-ind
+fr265.lang.zsm = $(fr265.lang.zsm);resources-fr265-zsm
+fr265.lang.vie = $(fr265.lang.vie);resources-fr265-vie
+fr265.lang.zhs = $(fr265.lang.zhs);resources-fr265-zhs
+fr265.lang.zht = $(fr265.lang.zht);resources-fr265-zht
+fr265.lang.jpn = $(fr265.lang.jpn);resources-fr265-jpn
+fr265.lang.kor = $(fr265.lang.kor);resources-fr265-kor
+fr265.lang.tha = $(fr265.lang.tha);resources-fr265-tha
+
+
+# Set the fr165 family qualifier
+fr165 = $(round-390x390)
+fr165.resourcePath = $(fr165.resourcePath);resources-fr165
+fr165.personality = $(fr165.personality);$(devicesPath)\fr165;resources-fr165
+
+# Set the fr165 language-specific string resources
+fr165.lang.ara = $(fr165.lang.ara);resources-fr165-ara
+fr165.lang.bul = $(fr165.lang.bul);resources-fr165-bul
+fr165.lang.ces = $(fr165.lang.ces);resources-fr165-ces
+fr165.lang.dan = $(fr165.lang.dan);resources-fr165-dan
+fr165.lang.deu = $(fr165.lang.deu);resources-fr165-deu
+fr165.lang.dut = $(fr165.lang.dut);resources-fr165-dut
+fr165.lang.eng = $(fr165.lang.eng);resources-fr165-eng
+fr165.lang.est = $(fr165.lang.est);resources-fr165-est
+fr165.lang.fin = $(fr165.lang.fin);resources-fr165-fin
+fr165.lang.fre = $(fr165.lang.fre);resources-fr165-fre
+fr165.lang.gre = $(fr165.lang.gre);resources-fr165-gre
+fr165.lang.heb = $(fr165.lang.heb);resources-fr165-heb
+fr165.lang.hrv = $(fr165.lang.hrv);resources-fr165-hrv
+fr165.lang.hun = $(fr165.lang.hun);resources-fr165-hun
+fr165.lang.ita = $(fr165.lang.ita);resources-fr165-ita
+fr165.lang.lav = $(fr165.lang.lav);resources-fr165-lav
+fr165.lang.lit = $(fr165.lang.lit);resources-fr165-lit
+fr165.lang.nob = $(fr165.lang.nob);resources-fr165-nob
+fr165.lang.pol = $(fr165.lang.pol);resources-fr165-pol
+fr165.lang.por = $(fr165.lang.por);resources-fr165-por
+fr165.lang.ron = $(fr165.lang.ron);resources-fr165-ron
+fr165.lang.rus = $(fr165.lang.rus);resources-fr165-rus
+fr165.lang.slo = $(fr165.lang.slo);resources-fr165-slo
+fr165.lang.slv = $(fr165.lang.slv);resources-fr165-slv
+fr165.lang.spa = $(fr165.lang.spa);resources-fr165-spa
+fr165.lang.swe = $(fr165.lang.swe);resources-fr165-swe
+fr165.lang.tur = $(fr165.lang.tur);resources-fr165-tur
+fr165.lang.ukr = $(fr165.lang.ukr);resources-fr165-ukr
+fr165.lang.ind = $(fr165.lang.ind);resources-fr165-ind
+fr165.lang.zsm = $(fr165.lang.zsm);resources-fr165-zsm
+fr165.lang.vie = $(fr165.lang.vie);resources-fr165-vie
+fr165.lang.zhs = $(fr165.lang.zhs);resources-fr165-zhs
+fr165.lang.zht = $(fr165.lang.zht);resources-fr165-zht
+fr165.lang.jpn = $(fr165.lang.jpn);resources-fr165-jpn
+fr165.lang.kor = $(fr165.lang.kor);resources-fr165-kor
+fr165.lang.tha = $(fr165.lang.tha);resources-fr165-tha
+
+
+# Set the marq2aviator family qualifier
+marq2aviator = $(round-390x390)
+marq2aviator.resourcePath = $(marq2aviator.resourcePath);resources-marq2aviator
+marq2aviator.personality = $(marq2aviator.personality);$(devicesPath)\marq2aviator;resources-marq2aviator
+
+# Set the marq2aviator language-specific string resources
+marq2aviator.lang.ara = $(marq2aviator.lang.ara);resources-marq2aviator-ara
+marq2aviator.lang.bul = $(marq2aviator.lang.bul);resources-marq2aviator-bul
+marq2aviator.lang.ces = $(marq2aviator.lang.ces);resources-marq2aviator-ces
+marq2aviator.lang.dan = $(marq2aviator.lang.dan);resources-marq2aviator-dan
+marq2aviator.lang.deu = $(marq2aviator.lang.deu);resources-marq2aviator-deu
+marq2aviator.lang.dut = $(marq2aviator.lang.dut);resources-marq2aviator-dut
+marq2aviator.lang.eng = $(marq2aviator.lang.eng);resources-marq2aviator-eng
+marq2aviator.lang.est = $(marq2aviator.lang.est);resources-marq2aviator-est
+marq2aviator.lang.fin = $(marq2aviator.lang.fin);resources-marq2aviator-fin
+marq2aviator.lang.fre = $(marq2aviator.lang.fre);resources-marq2aviator-fre
+marq2aviator.lang.gre = $(marq2aviator.lang.gre);resources-marq2aviator-gre
+marq2aviator.lang.heb = $(marq2aviator.lang.heb);resources-marq2aviator-heb
+marq2aviator.lang.hrv = $(marq2aviator.lang.hrv);resources-marq2aviator-hrv
+marq2aviator.lang.hun = $(marq2aviator.lang.hun);resources-marq2aviator-hun
+marq2aviator.lang.ita = $(marq2aviator.lang.ita);resources-marq2aviator-ita
+marq2aviator.lang.lav = $(marq2aviator.lang.lav);resources-marq2aviator-lav
+marq2aviator.lang.lit = $(marq2aviator.lang.lit);resources-marq2aviator-lit
+marq2aviator.lang.nob = $(marq2aviator.lang.nob);resources-marq2aviator-nob
+marq2aviator.lang.pol = $(marq2aviator.lang.pol);resources-marq2aviator-pol
+marq2aviator.lang.por = $(marq2aviator.lang.por);resources-marq2aviator-por
+marq2aviator.lang.ron = $(marq2aviator.lang.ron);resources-marq2aviator-ron
+marq2aviator.lang.rus = $(marq2aviator.lang.rus);resources-marq2aviator-rus
+marq2aviator.lang.slo = $(marq2aviator.lang.slo);resources-marq2aviator-slo
+marq2aviator.lang.slv = $(marq2aviator.lang.slv);resources-marq2aviator-slv
+marq2aviator.lang.spa = $(marq2aviator.lang.spa);resources-marq2aviator-spa
+marq2aviator.lang.swe = $(marq2aviator.lang.swe);resources-marq2aviator-swe
+marq2aviator.lang.tur = $(marq2aviator.lang.tur);resources-marq2aviator-tur
+marq2aviator.lang.ukr = $(marq2aviator.lang.ukr);resources-marq2aviator-ukr
+marq2aviator.lang.ind = $(marq2aviator.lang.ind);resources-marq2aviator-ind
+marq2aviator.lang.zsm = $(marq2aviator.lang.zsm);resources-marq2aviator-zsm
+marq2aviator.lang.vie = $(marq2aviator.lang.vie);resources-marq2aviator-vie
+marq2aviator.lang.zhs = $(marq2aviator.lang.zhs);resources-marq2aviator-zhs
+marq2aviator.lang.zht = $(marq2aviator.lang.zht);resources-marq2aviator-zht
+marq2aviator.lang.jpn = $(marq2aviator.lang.jpn);resources-marq2aviator-jpn
+marq2aviator.lang.kor = $(marq2aviator.lang.kor);resources-marq2aviator-kor
+marq2aviator.lang.tha = $(marq2aviator.lang.tha);resources-marq2aviator-tha
+
+
+# Set the epix2pro42mm family qualifier
+epix2pro42mm = $(round-390x390)
+epix2pro42mm.resourcePath = $(epix2pro42mm.resourcePath);resources-epix2pro42mm
+epix2pro42mm.personality = $(epix2pro42mm.personality);$(devicesPath)\epix2pro42mm;resources-epix2pro42mm
+
+# Set the epix2pro42mm language-specific string resources
+epix2pro42mm.lang.ara = $(epix2pro42mm.lang.ara);resources-epix2pro42mm-ara
+epix2pro42mm.lang.bul = $(epix2pro42mm.lang.bul);resources-epix2pro42mm-bul
+epix2pro42mm.lang.ces = $(epix2pro42mm.lang.ces);resources-epix2pro42mm-ces
+epix2pro42mm.lang.dan = $(epix2pro42mm.lang.dan);resources-epix2pro42mm-dan
+epix2pro42mm.lang.deu = $(epix2pro42mm.lang.deu);resources-epix2pro42mm-deu
+epix2pro42mm.lang.dut = $(epix2pro42mm.lang.dut);resources-epix2pro42mm-dut
+epix2pro42mm.lang.eng = $(epix2pro42mm.lang.eng);resources-epix2pro42mm-eng
+epix2pro42mm.lang.est = $(epix2pro42mm.lang.est);resources-epix2pro42mm-est
+epix2pro42mm.lang.fin = $(epix2pro42mm.lang.fin);resources-epix2pro42mm-fin
+epix2pro42mm.lang.fre = $(epix2pro42mm.lang.fre);resources-epix2pro42mm-fre
+epix2pro42mm.lang.gre = $(epix2pro42mm.lang.gre);resources-epix2pro42mm-gre
+epix2pro42mm.lang.heb = $(epix2pro42mm.lang.heb);resources-epix2pro42mm-heb
+epix2pro42mm.lang.hrv = $(epix2pro42mm.lang.hrv);resources-epix2pro42mm-hrv
+epix2pro42mm.lang.hun = $(epix2pro42mm.lang.hun);resources-epix2pro42mm-hun
+epix2pro42mm.lang.ita = $(epix2pro42mm.lang.ita);resources-epix2pro42mm-ita
+epix2pro42mm.lang.lav = $(epix2pro42mm.lang.lav);resources-epix2pro42mm-lav
+epix2pro42mm.lang.lit = $(epix2pro42mm.lang.lit);resources-epix2pro42mm-lit
+epix2pro42mm.lang.nob = $(epix2pro42mm.lang.nob);resources-epix2pro42mm-nob
+epix2pro42mm.lang.pol = $(epix2pro42mm.lang.pol);resources-epix2pro42mm-pol
+epix2pro42mm.lang.por = $(epix2pro42mm.lang.por);resources-epix2pro42mm-por
+epix2pro42mm.lang.ron = $(epix2pro42mm.lang.ron);resources-epix2pro42mm-ron
+epix2pro42mm.lang.rus = $(epix2pro42mm.lang.rus);resources-epix2pro42mm-rus
+epix2pro42mm.lang.slo = $(epix2pro42mm.lang.slo);resources-epix2pro42mm-slo
+epix2pro42mm.lang.slv = $(epix2pro42mm.lang.slv);resources-epix2pro42mm-slv
+epix2pro42mm.lang.spa = $(epix2pro42mm.lang.spa);resources-epix2pro42mm-spa
+epix2pro42mm.lang.swe = $(epix2pro42mm.lang.swe);resources-epix2pro42mm-swe
+epix2pro42mm.lang.tur = $(epix2pro42mm.lang.tur);resources-epix2pro42mm-tur
+epix2pro42mm.lang.ukr = $(epix2pro42mm.lang.ukr);resources-epix2pro42mm-ukr
+epix2pro42mm.lang.ind = $(epix2pro42mm.lang.ind);resources-epix2pro42mm-ind
+epix2pro42mm.lang.zsm = $(epix2pro42mm.lang.zsm);resources-epix2pro42mm-zsm
+epix2pro42mm.lang.vie = $(epix2pro42mm.lang.vie);resources-epix2pro42mm-vie
+epix2pro42mm.lang.zhs = $(epix2pro42mm.lang.zhs);resources-epix2pro42mm-zhs
+epix2pro42mm.lang.zht = $(epix2pro42mm.lang.zht);resources-epix2pro42mm-zht
+epix2pro42mm.lang.jpn = $(epix2pro42mm.lang.jpn);resources-epix2pro42mm-jpn
+epix2pro42mm.lang.kor = $(epix2pro42mm.lang.kor);resources-epix2pro42mm-kor
+epix2pro42mm.lang.tha = $(epix2pro42mm.lang.tha);resources-epix2pro42mm-tha
+
+
+# Set the fr255sm family qualifier
+fr255sm = $(round-218x218)
+fr255sm.resourcePath = $(fr255sm.resourcePath);resources-fr255sm
+fr255sm.personality = $(fr255sm.personality);$(devicesPath)\fr255sm;resources-fr255sm
+
+# Set the fr255sm language-specific string resources
+fr255sm.lang.ara = $(fr255sm.lang.ara);resources-fr255sm-ara
+fr255sm.lang.bul = $(fr255sm.lang.bul);resources-fr255sm-bul
+fr255sm.lang.ces = $(fr255sm.lang.ces);resources-fr255sm-ces
+fr255sm.lang.dan = $(fr255sm.lang.dan);resources-fr255sm-dan
+fr255sm.lang.deu = $(fr255sm.lang.deu);resources-fr255sm-deu
+fr255sm.lang.dut = $(fr255sm.lang.dut);resources-fr255sm-dut
+fr255sm.lang.eng = $(fr255sm.lang.eng);resources-fr255sm-eng
+fr255sm.lang.est = $(fr255sm.lang.est);resources-fr255sm-est
+fr255sm.lang.fin = $(fr255sm.lang.fin);resources-fr255sm-fin
+fr255sm.lang.fre = $(fr255sm.lang.fre);resources-fr255sm-fre
+fr255sm.lang.gre = $(fr255sm.lang.gre);resources-fr255sm-gre
+fr255sm.lang.heb = $(fr255sm.lang.heb);resources-fr255sm-heb
+fr255sm.lang.hrv = $(fr255sm.lang.hrv);resources-fr255sm-hrv
+fr255sm.lang.hun = $(fr255sm.lang.hun);resources-fr255sm-hun
+fr255sm.lang.ita = $(fr255sm.lang.ita);resources-fr255sm-ita
+fr255sm.lang.lav = $(fr255sm.lang.lav);resources-fr255sm-lav
+fr255sm.lang.lit = $(fr255sm.lang.lit);resources-fr255sm-lit
+fr255sm.lang.nob = $(fr255sm.lang.nob);resources-fr255sm-nob
+fr255sm.lang.pol = $(fr255sm.lang.pol);resources-fr255sm-pol
+fr255sm.lang.por = $(fr255sm.lang.por);resources-fr255sm-por
+fr255sm.lang.ron = $(fr255sm.lang.ron);resources-fr255sm-ron
+fr255sm.lang.rus = $(fr255sm.lang.rus);resources-fr255sm-rus
+fr255sm.lang.slo = $(fr255sm.lang.slo);resources-fr255sm-slo
+fr255sm.lang.slv = $(fr255sm.lang.slv);resources-fr255sm-slv
+fr255sm.lang.spa = $(fr255sm.lang.spa);resources-fr255sm-spa
+fr255sm.lang.swe = $(fr255sm.lang.swe);resources-fr255sm-swe
+fr255sm.lang.tur = $(fr255sm.lang.tur);resources-fr255sm-tur
+fr255sm.lang.ukr = $(fr255sm.lang.ukr);resources-fr255sm-ukr
+fr255sm.lang.ind = $(fr255sm.lang.ind);resources-fr255sm-ind
+fr255sm.lang.zsm = $(fr255sm.lang.zsm);resources-fr255sm-zsm
+fr255sm.lang.zhs = $(fr255sm.lang.zhs);resources-fr255sm-zhs
+fr255sm.lang.zht = $(fr255sm.lang.zht);resources-fr255sm-zht
+fr255sm.lang.jpn = $(fr255sm.lang.jpn);resources-fr255sm-jpn
+fr255sm.lang.kor = $(fr255sm.lang.kor);resources-fr255sm-kor
+fr255sm.lang.tha = $(fr255sm.lang.tha);resources-fr255sm-tha
+fr255sm.lang.vie = $(fr255sm.lang.vie);resources-fr255sm-vie
+
+
+# Set the fenix7pro family qualifier
+fenix7pro = $(round-260x260)
+fenix7pro.resourcePath = $(fenix7pro.resourcePath);resources-fenix7pro
+fenix7pro.personality = $(fenix7pro.personality);$(devicesPath)\fenix7pro;resources-fenix7pro
+
+# Set the fenix7pro language-specific string resources
+fenix7pro.lang.ara = $(fenix7pro.lang.ara);resources-fenix7pro-ara
+fenix7pro.lang.bul = $(fenix7pro.lang.bul);resources-fenix7pro-bul
+fenix7pro.lang.ces = $(fenix7pro.lang.ces);resources-fenix7pro-ces
+fenix7pro.lang.dan = $(fenix7pro.lang.dan);resources-fenix7pro-dan
+fenix7pro.lang.deu = $(fenix7pro.lang.deu);resources-fenix7pro-deu
+fenix7pro.lang.dut = $(fenix7pro.lang.dut);resources-fenix7pro-dut
+fenix7pro.lang.eng = $(fenix7pro.lang.eng);resources-fenix7pro-eng
+fenix7pro.lang.est = $(fenix7pro.lang.est);resources-fenix7pro-est
+fenix7pro.lang.fin = $(fenix7pro.lang.fin);resources-fenix7pro-fin
+fenix7pro.lang.fre = $(fenix7pro.lang.fre);resources-fenix7pro-fre
+fenix7pro.lang.gre = $(fenix7pro.lang.gre);resources-fenix7pro-gre
+fenix7pro.lang.heb = $(fenix7pro.lang.heb);resources-fenix7pro-heb
+fenix7pro.lang.hrv = $(fenix7pro.lang.hrv);resources-fenix7pro-hrv
+fenix7pro.lang.hun = $(fenix7pro.lang.hun);resources-fenix7pro-hun
+fenix7pro.lang.ita = $(fenix7pro.lang.ita);resources-fenix7pro-ita
+fenix7pro.lang.lav = $(fenix7pro.lang.lav);resources-fenix7pro-lav
+fenix7pro.lang.lit = $(fenix7pro.lang.lit);resources-fenix7pro-lit
+fenix7pro.lang.nob = $(fenix7pro.lang.nob);resources-fenix7pro-nob
+fenix7pro.lang.pol = $(fenix7pro.lang.pol);resources-fenix7pro-pol
+fenix7pro.lang.por = $(fenix7pro.lang.por);resources-fenix7pro-por
+fenix7pro.lang.ron = $(fenix7pro.lang.ron);resources-fenix7pro-ron
+fenix7pro.lang.rus = $(fenix7pro.lang.rus);resources-fenix7pro-rus
+fenix7pro.lang.slo = $(fenix7pro.lang.slo);resources-fenix7pro-slo
+fenix7pro.lang.slv = $(fenix7pro.lang.slv);resources-fenix7pro-slv
+fenix7pro.lang.spa = $(fenix7pro.lang.spa);resources-fenix7pro-spa
+fenix7pro.lang.swe = $(fenix7pro.lang.swe);resources-fenix7pro-swe
+fenix7pro.lang.tur = $(fenix7pro.lang.tur);resources-fenix7pro-tur
+fenix7pro.lang.ukr = $(fenix7pro.lang.ukr);resources-fenix7pro-ukr
+fenix7pro.lang.ind = $(fenix7pro.lang.ind);resources-fenix7pro-ind
+fenix7pro.lang.zsm = $(fenix7pro.lang.zsm);resources-fenix7pro-zsm
+fenix7pro.lang.vie = $(fenix7pro.lang.vie);resources-fenix7pro-vie
+fenix7pro.lang.zhs = $(fenix7pro.lang.zhs);resources-fenix7pro-zhs
+fenix7pro.lang.zht = $(fenix7pro.lang.zht);resources-fenix7pro-zht
+fenix7pro.lang.jpn = $(fenix7pro.lang.jpn);resources-fenix7pro-jpn
+fenix7pro.lang.kor = $(fenix7pro.lang.kor);resources-fenix7pro-kor
+fenix7pro.lang.tha = $(fenix7pro.lang.tha);resources-fenix7pro-tha
+
+
+# Set the fr965 family qualifier
+fr965 = $(round-454x454)
+fr965.resourcePath = $(fr965.resourcePath);resources-fr965
+fr965.personality = $(fr965.personality);$(devicesPath)\fr965;resources-fr965
+
+# Set the fr965 language-specific string resources
+fr965.lang.ara = $(fr965.lang.ara);resources-fr965-ara
+fr965.lang.bul = $(fr965.lang.bul);resources-fr965-bul
+fr965.lang.ces = $(fr965.lang.ces);resources-fr965-ces
+fr965.lang.dan = $(fr965.lang.dan);resources-fr965-dan
+fr965.lang.deu = $(fr965.lang.deu);resources-fr965-deu
+fr965.lang.dut = $(fr965.lang.dut);resources-fr965-dut
+fr965.lang.eng = $(fr965.lang.eng);resources-fr965-eng
+fr965.lang.est = $(fr965.lang.est);resources-fr965-est
+fr965.lang.fin = $(fr965.lang.fin);resources-fr965-fin
+fr965.lang.fre = $(fr965.lang.fre);resources-fr965-fre
+fr965.lang.gre = $(fr965.lang.gre);resources-fr965-gre
+fr965.lang.heb = $(fr965.lang.heb);resources-fr965-heb
+fr965.lang.hrv = $(fr965.lang.hrv);resources-fr965-hrv
+fr965.lang.hun = $(fr965.lang.hun);resources-fr965-hun
+fr965.lang.ita = $(fr965.lang.ita);resources-fr965-ita
+fr965.lang.lav = $(fr965.lang.lav);resources-fr965-lav
+fr965.lang.lit = $(fr965.lang.lit);resources-fr965-lit
+fr965.lang.nob = $(fr965.lang.nob);resources-fr965-nob
+fr965.lang.pol = $(fr965.lang.pol);resources-fr965-pol
+fr965.lang.por = $(fr965.lang.por);resources-fr965-por
+fr965.lang.ron = $(fr965.lang.ron);resources-fr965-ron
+fr965.lang.rus = $(fr965.lang.rus);resources-fr965-rus
+fr965.lang.slo = $(fr965.lang.slo);resources-fr965-slo
+fr965.lang.slv = $(fr965.lang.slv);resources-fr965-slv
+fr965.lang.spa = $(fr965.lang.spa);resources-fr965-spa
+fr965.lang.swe = $(fr965.lang.swe);resources-fr965-swe
+fr965.lang.tur = $(fr965.lang.tur);resources-fr965-tur
+fr965.lang.ukr = $(fr965.lang.ukr);resources-fr965-ukr
+fr965.lang.ind = $(fr965.lang.ind);resources-fr965-ind
+fr965.lang.zsm = $(fr965.lang.zsm);resources-fr965-zsm
+fr965.lang.vie = $(fr965.lang.vie);resources-fr965-vie
+fr965.lang.zhs = $(fr965.lang.zhs);resources-fr965-zhs
+fr965.lang.zht = $(fr965.lang.zht);resources-fr965-zht
+fr965.lang.jpn = $(fr965.lang.jpn);resources-fr965-jpn
+fr965.lang.kor = $(fr965.lang.kor);resources-fr965-kor
+fr965.lang.tha = $(fr965.lang.tha);resources-fr965-tha
