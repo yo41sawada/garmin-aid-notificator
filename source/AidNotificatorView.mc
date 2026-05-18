@@ -1,4 +1,5 @@
 import Toybox.Activity;
+import Toybox.Application;
 import Toybox.Attention;
 import Toybox.Graphics;
 import Toybox.Lang;
@@ -92,7 +93,15 @@ class AidNotificatorView extends WatchUi.DataField {
 
         var text;
         if (!_isActive) {
-            text = "AID Ready";
+            var cx = dc.getWidth() / 2;
+            var cy = dc.getHeight() / 2;
+            var icon = Application.loadResource(Rez.Drawables.FuelAlertIcon) as Graphics.BitmapReference;
+            var aidTextRes = (backgroundColor == Graphics.COLOR_BLACK) ? Rez.Drawables.AidText : Rez.Drawables.AidTextDark;
+            var aidText = Application.loadResource(aidTextRes) as Graphics.BitmapReference;
+            dc.drawBitmap(cx - 80, cy - 108, aidText);
+            dc.drawBitmap(cx - 50, cy - 50, icon);
+            dc.drawText(cx, cy + 78, Graphics.FONT_TINY, "notificator", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            return;
         } else if (_nextAidIndex >= AID_STATIONS.size()) {
             text = "Keep going!";
         } else {
