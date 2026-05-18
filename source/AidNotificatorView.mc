@@ -98,9 +98,9 @@ class AidNotificatorView extends WatchUi.DataField {
             var icon = Application.loadResource(Rez.Drawables.ReadyIcon) as Graphics.BitmapReference;
             var aidTextRes = (backgroundColor == Graphics.COLOR_BLACK) ? Rez.Drawables.AidTextWhite : Rez.Drawables.AidTextBlack;
             var aidText = Application.loadResource(aidTextRes) as Graphics.BitmapReference;
-            dc.drawBitmap(cx - 80, cy - 108, aidText);
-            dc.drawBitmap(cx - 50, cy - 50, icon);
-            dc.drawText(cx, cy + 78, Graphics.FONT_TINY, "notificator", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawBitmap(cx - 80, cy - 158, aidText);
+            dc.drawBitmap(cx - 100, cy - 100, icon);
+            dc.drawText(cx, cy + 118, Graphics.FONT_TINY, "notificator", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
             return;
         } else if (_nextAidIndex >= AID_STATIONS.size()) {
             text = "Keep going!";
