@@ -96,7 +96,7 @@ class AidNotificatorView extends WatchUi.DataField {
             var cx = dc.getWidth() / 2;
             var cy = dc.getHeight() / 2;
             var icon = Application.loadResource(Rez.Drawables.ReadyIcon) as Graphics.BitmapReference;
-            var aidTextRes = (backgroundColor == Graphics.COLOR_BLACK) ? Rez.Drawables.AidText : Rez.Drawables.AidTextDark;
+            var aidTextRes = (backgroundColor == Graphics.COLOR_BLACK) ? Rez.Drawables.AidTextWhite : Rez.Drawables.AidTextBlack;
             var aidText = Application.loadResource(aidTextRes) as Graphics.BitmapReference;
             dc.drawBitmap(cx - 80, cy - 108, aidText);
             dc.drawBitmap(cx - 50, cy - 50, icon);
