@@ -32,7 +32,10 @@ source/
 └── AidAlertView.mc         # 補給通知の全画面アラート
 resources/
 ├── drawables/
-│   └── launcher_icon.png   # ランチャーアイコン（70x70）
+│   ├── icon_54x54_transparent.png    # ランチャーアイコン（54x54、透過PNG）
+│   ├── icon_200x200_transparent.png  # 初期表示アイコン（200x200、透過PNG）
+│   ├── AID_160x50_transparent_white.png  # AID テキスト画像・白文字（黒背景用）
+│   └── AID_160x50_transparent_black.png  # AID テキスト画像・黒文字（白背景用）
 ├── store/
 │   └── store_icon.png      # Connect IQ ストア申請用アイコン（512x512）
 └── resources.xml           # 文字列・画像リソース
