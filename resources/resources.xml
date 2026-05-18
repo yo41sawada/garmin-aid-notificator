@@ -1,5 +1,8 @@
 <resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <string id="AppName">Aid Notificator</string>
 
-    <bitmap id="LauncherIcon" filename="drawables/launcher_icon.png" />
+    <bitmap id="LauncherIcon" filename="drawables/icon_54x54_transparent.png" />
+    <bitmap id="ReadyIcon" filename="drawables/icon_200x200_transparent.png" />
+    <bitmap id="AidTextWhite" filename="drawables/AID_160x50_transparent_white.png" />
+    <bitmap id="AidTextBlack" filename="drawables/AID_160x50_transparent_black.png" />
 </resources>
