@@ -3,6 +3,6 @@
 
     <bitmap id="LauncherIcon" filename="drawables/launcher_icon.png" />
     <bitmap id="FuelAlertIcon" filename="drawables/fuel_alert_icon.png" />
-    <bitmap id="AidText" filename="drawables/AID_160x50_transparent.png" />
+    <bitmap id="AidText" filename="drawables/AID_160x50_transparent_white.png" />
     <bitmap id="AidTextDark" filename="drawables/AID_160x50_transparent_black.png" />
 </resources>
